@@ -1,4 +1,4 @@
-{"SubjectEntity": "Siemens-Schuckert", "Relation": "CompanyHasParentOrganisation", "ObjectEntitiesID": ["Q81230"]}
+{"SubjectEntity": "Siemens-Schuckert", "Relation": "CompanyHasParentOrganisation", "ObjectEntitiesID": ["Q48881"]}
 {"SubjectEntity": "Royal Boskalis Westminster", "Relation": "CompanyHasParentOrganisation", "ObjectEntitiesID": ["", "Q1684922"]}
 {"SubjectEntity": "Valspar", "Relation": "CompanyHasParentOrganisation", "ObjectEntitiesID": ["Q48881", "Q26215536"]}
 {"SubjectEntity": "Hyundai Motor Company", "Relation": "CompanyHasParentOrganisation", "ObjectEntitiesID": ["Q55931", "Q35349"]}
@@ -98,3 +98,103 @@
 {"SubjectEntity": "Meitetsu", "Relation": "CompanyHasParentOrganisation", "ObjectEntitiesID": ["Q55931"]}
 {"SubjectEntity": "Ford South Africa", "Relation": "CompanyHasParentOrganisation", "ObjectEntitiesID": ["Q903523", "Q3733763", "Q6802523"]}
 {"SubjectEntity": "General Motors Thailand", "Relation": "CompanyHasParentOrganisation", "ObjectEntitiesID": ["Q53268"]}
+{"SubjectEntity": "Algeria", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q156578"]}
+{"SubjectEntity": "Namibia", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q55931"]}
+{"SubjectEntity": "Eritrea", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q438294", "Q2901365", "Q117263076", "Q1746945"]}
+{"SubjectEntity": "Papua New Guinea", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q60770044"]}
+{"SubjectEntity": "Moldova", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q333498"]}
+{"SubjectEntity": "Kingdom of the Netherlands", "Relation": "CountryBordersCountry", "ObjectEntitiesID": [""]}
+{"SubjectEntity": "Cambodia", "Relation": "CountryBordersCountry", "ObjectEntitiesID": [""]}
+{"SubjectEntity": "Somalia", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q188514"]}
+{"SubjectEntity": "El Salvador", "Relation": "CountryBordersCountry", "ObjectEntitiesID": [""]}
+{"SubjectEntity": "Zambia", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q44294"]}
+{"SubjectEntity": "Vietnam", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q81965"]}
+{"SubjectEntity": "Singapore", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q948", "Q1016", "Q1032", "Q912", "Q1025", "Q6250", "Q1028"]}
+{"SubjectEntity": "Bosnia and Herzegovina", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q916", "Q963", "Q258", "Q953"]}
+{"SubjectEntity": "Taiwan", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q115", "Q1049", "Q977"]}
+{"SubjectEntity": "Lesotho", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q252", "Q408"]}
+{"SubjectEntity": "The Gambia", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q218", "Q212"]}
+{"SubjectEntity": "Kazakhstan", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q183", "Q31"]}
+{"SubjectEntity": "Senegal", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q881", "Q869", "Q819"]}
+{"SubjectEntity": "Indonesia", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q114", "Q115", "Q977"]}
+{"SubjectEntity": "Portugal", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q783", "Q774"]}
+{"SubjectEntity": "Switzerland", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q954", "Q924", "Q1020", "Q1029", "Q1030", "Q916", "Q963", "Q974"]}
+{"SubjectEntity": "Ecuador", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q148", "Q424", "Q819"]}
+{"SubjectEntity": "North Korea", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q833", "Q252"]}
+{"SubjectEntity": "Tunisia", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q224", "Q403", "Q236"]}
+{"SubjectEntity": "Morocco", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q148"]}
+{"SubjectEntity": "Angola", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q258"]}
+{"SubjectEntity": "Chad", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q1041"]}
+{"SubjectEntity": "Cyprus", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q159", "Q148", "Q813", "Q265", "Q874"]}
+{"SubjectEntity": "Kingdom of Africa", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q1025", "Q912", "Q1006", "Q1005"]}
+{"SubjectEntity": "Luxembourg", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q833", "Q691", "Q574"]}
+{"SubjectEntity": "South Africa", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q29", "Q228"]}
+{"SubjectEntity": "Honduras", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q183", "Q142", "Q38", "Q40", "Q347"]}
+{"SubjectEntity": "Uruguay", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q739", "Q419"]}
+{"SubjectEntity": "Czech Republic", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q884", "Q148", "Q159"]}
+{"SubjectEntity": "Maldives", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q262", "Q1016"]}
+{"SubjectEntity": "Madagascar", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q262", "Q6250", "Q29"]}
+{"SubjectEntity": "North Macedonia", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q1030", "Q974", "Q953"]}
+{"SubjectEntity": "Germany", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q1009", "Q929", "Q1016", "Q1032", "Q1033", "Q1049"]}
+{"SubjectEntity": "Republic of Ireland", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q145"]}
+{"SubjectEntity": "Oman", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q79", "Q1049", "Q115", "Q114", "Q1036", "Q974", "Q916", "Q1030"]}
+{"SubjectEntity": "Italy", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q31", "Q183", "Q142"]}
+{"SubjectEntity": "Botswana", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q1030", "Q963", "Q954", "Q1029", "Q1050", "Q1013"]}
+{"SubjectEntity": "Afghanistan", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q774", "Q792", "Q811"]}
+{"SubjectEntity": "Armenia", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q414", "Q155"]}
+{"SubjectEntity": "Nicaragua", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q183", "Q40", "Q214", "Q36"]}
+{"SubjectEntity": "Turkmenistan", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q668", "Q854"]}
+{"SubjectEntity": "Montenegro", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q1029", "Q142", "Q970"]}
+{"SubjectEntity": "Chile", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q222", "Q219", "Q41", "Q1246", "Q403"]}
+{"SubjectEntity": "Kiribati", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q142", "Q32", "Q55", "Q31", "Q35", "Q36", "Q213", "Q40", "Q39"]}
+{"SubjectEntity": "Guinea", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q145"]}
+{"SubjectEntity": "Kyrgyzstan", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q805", "Q878"]}
+{"SubjectEntity": "Kingdom of Denmark", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q142", "Q39", "Q40", "Q215"]}
+{"SubjectEntity": "Gabon", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q1030", "Q258", "Q954"]}
+{"SubjectEntity": "Panama", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q843", "Q794", "Q874", "Q265", "Q863", "Q148"]}
+{"SubjectEntity": "Belarus", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q227", "Q230", "Q794", "Q43"]}
+{"SubjectEntity": "Peru", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q783", "Q800"]}
+{"SubjectEntity": "Djibouti", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q232", "Q265", "Q889", "Q794"]}
+{"SubjectEntity": "S\u00e3o Tom\u00e9 and Pr\u00edncipe", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q224", "Q225", "Q403", "Q222"]}
+{"SubjectEntity": "Grenada", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q419", "Q750", "Q414"]}
+{"SubjectEntity": "Benin", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q709", "Q672", "Q697", "Q712", "Q36823"]}
+{"SubjectEntity": "Azerbaijan", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q1041", "Q1007", "Q1044", "Q1014", "Q1008", "Q912"]}
+{"SubjectEntity": "Belgium", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q232", "Q265", "Q863", "Q148"]}
+{"SubjectEntity": "Albania", "Relation": "CountryBordersCountry", "ObjectEntitiesID": ["Q183", "Q34"]}
+{"SubjectEntity": "Sweden", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q983", "Q971"]}
+{"SubjectEntity": "Uganda", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q739", "Q800"]}
+{"SubjectEntity": "Maldives", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q37", "Q211", "Q159", "Q212", "Q36"]}
+{"SubjectEntity": "Syria", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q739", "Q155", "Q298", "Q736", "Q750"]}
+{"SubjectEntity": "Fiji", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q986", "Q115", "Q1045"]}
+{"SubjectEntity": "Kenya", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q983"]}
+{"SubjectEntity": "Austria", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q757", "Q754"]}
+{"SubjectEntity": "Estonia", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q1033", "Q1032", "Q965", "Q945"]}
+{"SubjectEntity": "Honduras", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q794", "Q43", "Q159", "Q399", "Q230"]}
+{"SubjectEntity": "Madagascar", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q55", "Q183", "Q32", "Q142"]}
+{"SubjectEntity": "Uruguay", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q236", "Q1246", "Q221", "Q41"]}
+{"SubjectEntity": "Luxembourg", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q9027", "Q1412", "Q13357", "Q56463"]}
+{"SubjectEntity": "Peru", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q1860", "Q7838"]}
+{"SubjectEntity": "Guatemala", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q32656", "Q1860"]}
+{"SubjectEntity": "Kingdom of the Netherlands", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q13955", "Q36368"]}
+{"SubjectEntity": "Tunisia", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q33295", "Q1860", "Q46728"]}
+{"SubjectEntity": "Turkmenistan", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q7838", "Q1860"]}
+{"SubjectEntity": "North Korea", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q188", "Q9063", "Q9067", "Q6654", "Q9056", "Q9058"]}
+{"SubjectEntity": "Burkina Faso", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q9072", "Q7737"]}
+{"SubjectEntity": "Democratic Republic of the Congo", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q1321"]}
+{"SubjectEntity": "Qatar", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q7930", "Q150", "Q1860"]}
+{"SubjectEntity": "Palau", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q1321"]}
+{"SubjectEntity": "Rwanda", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q9051", "Q150", "Q188"]}
+{"SubjectEntity": "Kiribati", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q1321", "Q5218", "Q4627"]}
+{"SubjectEntity": "Oman", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q1321", "Q33738", "Q35490", "Q11082735"]}
+{"SubjectEntity": "Kyrgyzstan", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q7411", "Q27175", "Q33856"]}
+{"SubjectEntity": "Monaco", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["", ""]}
+{"SubjectEntity": "Moldova", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q9267", "Q7737"]}
+{"SubjectEntity": "Suriname", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q9176"]}
+{"SubjectEntity": "North Macedonia", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q150", "Q36096"]}
+{"SubjectEntity": "Namibia", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q150", "Q36217", "Q33702", "Q7838", "Q34173"]}
+{"SubjectEntity": "Barbados", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q13955"]}
+{"SubjectEntity": "Federated States of Micronesia", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q1860"]}
+{"SubjectEntity": "Republic of Ireland", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q1617"]}
+{"SubjectEntity": "Saint Vincent and the Grenadines", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q1568"]}
+{"SubjectEntity": "Pakistan", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q34057"]}
+{"SubjectEntity": "Botswana", "Relation": "CountryHasOfficialLanguage", "ObjectEntitiesID": ["Q1860", "Q33776"]}
