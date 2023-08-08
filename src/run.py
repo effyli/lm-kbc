@@ -5,9 +5,11 @@ import openai
 import argparse
 import logging
 
+from retry import retry
 from datetime import datetime
 from prompt import REprompt
 
+# os.environ["OPENAI_API_KEY"] = ""
 os.environ["OPENAI_API_KEY"] = "YOUR API KEY HERE"
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
@@ -21,6 +23,7 @@ def read_lm_kbc_jsonl(file_path: str):
 
 
 # Get an answer from the GPT-API
+@retry(tries=3, delay=5, max_delay=25)
 def GPT3response(q, temperature, model="gpt-3.5-turbo", max_tokens=500):
     response = openai.ChatCompletion.create(
         # curie is factor of 10 cheaper than davinci, but correspondingly less performant
@@ -70,7 +73,8 @@ if __name__ == '__main__':
     logging.basicConfig(filename=logging_file, filemode='w', format='%(name)s - %(levelname)s - %(message)s')
     logging.warning('Start logging')
 
-    output_file = "extraction_prompt_{}_time_{}.txt".format(prompt_type, now.strftime("%m-%d-%Y-%H:%M:%S"))
+    # output_file = "extraction_prompt_{}_time_{}.txt".format(prompt_type, now.strftime("%m-%d-%Y-%H:%M:%S"))
+    output_file = "extraction_prompt_langchain_time_08-08-2023-16:35:03.txt"
     output_file_path = os.path.join(output_dir, output_file)
 
     # load data
@@ -104,9 +108,9 @@ if __name__ == '__main__':
     # prompting the validation set
     extraction_output = []
     # streaming save while prompting
-    for i, line in tqdm(enumerate((val_data))):
+    for i, line in tqdm(enumerate((val_data[1246:]))):
         print("{} samples processed, {} left. {} % processed".format(i, len(val_data) - i, (i/(len(val_data) - i)) * 100))
-        if i % 10 == 0:
+        if i % logging_data_level == 0:
             logging.warning("{} samples prompt, {} left".format(i, len(val_data) - i))
         input_sbj = line['SubjectEntity']
         input_relation = line['Relation']
