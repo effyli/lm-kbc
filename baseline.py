@@ -28,7 +28,7 @@ def read_lm_kbc_jsonl(file_path: str):
 def disambiguation_baseline(item):
     try:
         # If item can be converted to an integer, return it directly
-        return int(item)
+        item = int(item)
     except ValueError:
         # If not, proceed with the Wikidata search
         try:

@@ -1,7 +1,7 @@
 import re
 import json
 from baseline import disambiguation_baseline
-from src.wikidata_utils import load_wikidata_cache, update_wikidata_cache
+from src.wikidata_utils import load_wikidata_cache, update_wikidata_cache, wikidata_id_sort
 
 BRACKET_PATTERN = r"\[(.*?)\]"
 
@@ -54,17 +54,18 @@ def align_pedictions_with_validation(predictions: list):
 
     # prep prediction for eval
     updated_predictions = []
-    for x, ys in all_results[:200]:
+    for x, ys in all_results[:400]:
         parsed_x = json.loads(x)
         wikidata_ids = []
         wikidata_cache = load_wikidata_cache()        
         for y in ys:
             if y in wikidata_cache:
-                wikidata_ids.append(wikidata_cache[y])
+                wikidata_ids.append(str(wikidata_cache[y]))
             else:   
                 dismabiguated_wikidata_id = disambiguation_baseline(y)
                 update_wikidata_cache(dismabiguated_wikidata_id, y)
-                wikidata_ids.append(dismabiguated_wikidata_id)
+                wikidata_ids.append(str(dismabiguated_wikidata_id))
+        wikidata_ids = sorted(wikidata_ids, key=lambda x: wikidata_id_sort(x))
         updated_predictions.append(
             {
                 "SubjectEntity": parsed_x["SubjectEntity"],
