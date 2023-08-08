@@ -1,0 +1,277 @@
+{
+    "input": [
+      {
+        "property": "BandHasMember",
+        "output": [
+          {
+            "value": "P527",
+            "wikidata_id": "Q2088357",
+            "wikidata_label": "has part",
+            "domain": "band",
+            "range": "musician",
+            "explanation": "This property connects a musical band to its members, where the member is a musician who is part of the band."
+          }
+        ]
+      },
+      {
+        "property": "CityLocatedAtRiver",
+        "output": [
+          {
+            "value": "P706",
+            "wikidata_id": "Q22698",
+            "wikidata_label": "located on terrain feature",
+            "domain": "city",
+            "range": "river",
+            "explanation": "This property connects a city to the river on which it is located."
+          }
+        ]
+      },
+      {
+        "property": "CompanyHasParentOrganisation",
+        "output": [
+          {
+            "value": "P749",
+            "wikidata_id": "Q15982182",
+            "wikidata_label": "parent organization",
+            "domain": "subsidiary company",
+            "range": "organization",
+            "explanation": "This property connects a subsidiary company to its parent organization."
+          }
+        ]
+      },
+      {
+        "property": "CompoundHasParts",
+        "output": [
+          {
+            "value": "P527",
+            "wikidata_id": "Q1644481",
+            "wikidata_label": "has part",
+            "domain": "chemical compound",
+            "range": "chemical element",
+            "explanation": "This property connects a chemical compound to its individual chemical elements that make up the compound."
+          }
+        ]
+      },
+      {
+        "property": "CountryBordersCountry",
+        "output": [
+          {
+            "value": "P47",
+            "wikidata_id": "Q186113",
+            "wikidata_label": "shares border with",
+            "domain": "sovereign state",
+            "range": "sovereign state",
+            "explanation": "This property connects one country to another country with which it shares a border."
+          }
+        ]
+      },
+      {
+        "property": "CountryHasOfficialLanguage",
+        "output": [
+          {
+            "value": "P37",
+            "wikidata_id": "Q186441",
+            "wikidata_label": "official language",
+            "domain": "sovereign state",
+            "range": "language",
+            "explanation": "This property connects a country to its official language(s)."
+          }
+        ]
+      },
+      {
+        "property": "CountryHasStates",
+        "output": [
+          {
+            "value": "P150",
+            "wikidata_id": "Q209839",
+            "wikidata_label": "contains administrative territorial entity",
+            "domain": "sovereign state",
+            "range": "administrative territorial entity",
+            "explanation": "This property connects a country to its constituent states or administrative divisions."
+          }
+        ]
+      },
+      {
+        "property": "FootballerPlaysPosition",
+        "output": [
+          {
+            "value": "P413",
+            "wikidata_id": "Q937857",
+            "wikidata_label": "position played on team / speciality",
+            "domain": "association football player",
+            "range": "association football position",
+            "explanation": "This property connects a football player to the specific position they play on the team."
+          }
+        ]
+      },
+      {
+        "property": "PersonCauseOfDeath",
+        "output": [
+          {
+            "value": "P509",
+            "wikidata_id": "Q12191123",
+            "wikidata_label": "cause of death",
+            "domain": "human",
+            "range": "manner of death",
+            "explanation": "This property connects a person to the cause/manner of their death."
+          }
+        ]
+      },
+      {
+        "property": "PersonHasAutobiography",
+        "output": [
+          {
+            "value": "P906",
+            "wikidata_id": "Q340169",
+            "wikidata_label": "autobiography",
+            "domain": "human",
+            "range": "book",
+            "explanation": "This property connects a person to their autobiography, which is represented as a book."
+          }
+        ]
+      },
+      {
+        "property": "PersonHasEmployer",
+        "output": [
+          {
+            "value": "P108",
+            "wikidata_id": "Q587383",
+            "wikidata_label": "employer",
+            "domain": "human",
+            "range": "organization",
+            "explanation": "This property connects a person to the organization that employs them."
+          }
+        ]
+      },
+      {
+        "property": "PersonHasNoblePrize",
+        "output": [
+          {
+            "value": "P166",
+            "wikidata_id": "Q7193",
+            "wikidata_label": "award received",
+            "domain": "human",
+            "range": "noble prize",
+            "explanation": "This property connects a person to the Nobel Prize they have received."
+          }
+        ]
+      },
+      {
+        "property": "PersonHasNumberOfChildren",
+        "output": [
+          {
+            "value": "P1971",
+            "wikidata_id": "Q108550",
+            "wikidata_label": "number of children",
+            "domain": "human",
+            "range": "quantity",
+            "explanation": "This property connects a person to the number of children they have."
+          }
+        ]
+      },
+      {
+        "property": "PersonHasPlaceOfDeath",
+        "output": [
+          {
+            "value": "P20",
+            "wikidata_id": "Q1860",
+            "wikidata_label": "place of death",
+            "domain": "human",
+            "range": "geographic location",
+            "explanation": "This property connects a person to the place where they died."
+          }
+        ]
+      },
+      {
+        "property": "PersonHasProfession",
+        "output": [
+          {
+            "value": "P106",
+            "wikidata_id": "Q28640",
+            "wikidata_label": "occupation",
+            "domain": "human",
+            "range": "occupation",
+            "explanation": "This property connects a person to their profession/occupation."
+          }
+        ]
+      },
+      {
+        "property": "PersonHasSpouse",
+        "output": [
+          {
+            "value": "P26",
+            "wikidata_id": "Q49848",
+            "wikidata_label": "spouse",
+            "domain": "human",
+            "range": "human",
+            "explanation": "This property connects a person to their spouse or partner."
+          }
+        ]
+      },
+      {
+        "property": "PersonPlaysInstrument",
+        "output": [
+          {
+            "value": "P1303",
+            "wikidata_id": "Q13354104",
+            "wikidata_label": "instrument",
+            "domain": "musician",
+            "range": "musical instrument",
+            "explanation": "This property connects a musician to the musical instrument they play."
+          }
+        ]
+      },
+      {
+        "property": "PersonSpeaksLanguage",
+        "output": [
+          {
+            "value": "P1412",
+            "wikidata_id": "Q34770",
+            "wikidata_label": "languages spoken, written or signed",
+            "domain": "human",
+            "range": "language",
+            "explanation": "This property connects a person to the languages they speak, write, or use in sign language."
+          }
+        ]
+      },
+      {
+        "property": "RiverBasinsCountry",
+        "output": [
+          {
+            "value": "P206",
+            "wikidata_id": "Q4022",
+            "wikidata_label": "located in or next to body of water",
+            "domain": "river",
+            "range": "country",
+            "explanation": "This property connects a river to the country in which it is located or flows through."
+          }
+        ]
+      },
+      {
+        "property": "SeriesHasNumberOfEpisodes",
+        "output": [
+          {
+            "value": "P1113",
+            "wikidata_id": "Q2188189",
+            "wikidata_label": "number of episodes",
+            "domain": "television series",
+            "range": "quantity",
+            "explanation": "This property connects a television series to the number of episodes it has."
+          }
+        ]
+      },
+      {
+        "property": "StateBordersState",
+        "output": [
+          {
+            "value": "P47",
+            "wikidata_id": "Q712758",
+            "wikidata_label": "shares border with",
+            "domain": "administrative territorial entity",
+            "range": "administrative territorial entity",
+            "explanation": "This property connects one administrative division/state to another administrative division/state with which it shares a border."
+          }
+        ]
+      }
+    ]
+  }
