@@ -37,7 +37,7 @@ def disambiguation_baseline(item):
             # Return the first id (Could upgrade this in the future)
             return data['search'][0]['id']
         except:
-            return item
+            return ""
 
 
 # Read prompt templates from a CSV file
