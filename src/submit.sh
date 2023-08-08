@@ -1,13 +1,16 @@
 #!/bin/bash
-#Set job requirements
-#SBATCH --job-name=kbc
+#
+#SBATCH --job-name=test-gpt
 #SBATCH --output=prompting.txt
-#SBATCH --nodes=1
+#
+#SBATCH -N 1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=16
-#SBATCH --gres=gpu:1
-#SBATCH --partition=defq
-#SBATCH --time=1-00:00:00
+#SBATCH --cpus-per-task=18
+#SBATCH --gpus=1
+#SBATCH -p gpu
+#SBATCH -t 02:00:00
 
-module load cuda11.7/toolkit
-srun python3 run.py
+srun hostname
+source activate kgc
+python run.py -d ../data/ -o ../extractions/ -l
+

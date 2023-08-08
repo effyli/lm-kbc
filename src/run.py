@@ -8,7 +8,7 @@ import logging
 from datetime import datetime
 from prompt import REprompt
 
-os.environ["OPENAI_API_KEY"] = "YOUR KEY HERE"
+os.environ["OPENAI_API_KEY"] = "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"
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
 # Read jsonl file containing LM-KBC data
@@ -21,19 +21,19 @@ def read_lm_kbc_jsonl(file_path: str):
 
 
 # Get an answer from the GPT-API
-def GPT3response(q, temperature, model="text-davinci-003", max_tokens=100):
-    response = openai.Completion.create(
+def GPT3response(q, temperature, model="gpt-3.5-turbo", max_tokens=500):
+    response = openai.ChatCompletion.create(
         # curie is factor of 10 cheaper than davinci, but correspondingly less performant
         #model="text-davinci-003",
         model=model,
-        prompt=q,
+        messages=[{"role": "assistant", "content": q}],
         temperature=temperature,
         max_tokens=max_tokens,
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0,
     )
-    response = response.choices[0].text
+    response = response.choices[0]["message"]["content"]
     # replace following codes to post_processing
     # response = response.splitlines()[0]
     # if len(response)>0:
@@ -116,6 +116,7 @@ if __name__ == '__main__':
         with open(output_file_path, 'a') as f:
             f.write(extraction)
             f.write("\n")
+
         extraction_output.append(extraction)
     logging.warning("Prompting finished")
 
