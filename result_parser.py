@@ -60,11 +60,11 @@ def align_pedictions_with_validation(predictions: list):
         wikidata_cache = load_wikidata_cache()        
         for y in ys:
             if y in wikidata_cache:
-                wikidata_ids.append(wikidata_cache[y])
+                wikidata_ids.append(str(wikidata_cache[y]))
             else:   
                 dismabiguated_wikidata_id = disambiguation_baseline(y)
                 update_wikidata_cache(dismabiguated_wikidata_id, y)
-                wikidata_ids.append(dismabiguated_wikidata_id)
+                wikidata_ids.append(str(dismabiguated_wikidata_id))
         wikidata_ids = sorted(wikidata_ids, key=lambda x: wikidata_id_sort(x))
         updated_predictions.append(
             {

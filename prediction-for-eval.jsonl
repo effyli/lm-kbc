@@ -257,119 +257,119 @@
 {"SubjectEntity": "Anurag Kashyap", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["Q150", "Q13955", "Q25448"]}
 {"SubjectEntity": "Claudia Gerini", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["Q5146"]}
 {"SubjectEntity": "Bj\u00f6rk", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["Q9299"]}
-{"SubjectEntity": "Frederick Browning", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Michael Snow", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Peter Ramsbotham", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [1]}
-{"SubjectEntity": "Roger Moore", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Marjatta Kurenniemi", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Henry Worsley", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [0]}
-{"SubjectEntity": "Jennifer Connelly", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [0, 5]}
-{"SubjectEntity": "Carlyle Glean", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [0, 2, 3]}
-{"SubjectEntity": "Patricia Heaton", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Mario Clavell", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [1]}
-{"SubjectEntity": "Claudio Amendola", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [4, 6]}
-{"SubjectEntity": "Eliot Spitzer", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Marika \u0160oposk\u00e1", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Jean Simmons", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [3]}
-{"SubjectEntity": "Bernie Ecclestone", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Tony Bennett", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Antonio Banderas", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Rutger Hauer", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [1]}
-{"SubjectEntity": "Casey Affleck", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Thomas de Mahy, marquis de Favras", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [0]}
-{"SubjectEntity": "Angela Kinsey", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [1]}
-{"SubjectEntity": "Richard Gere", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [0]}
-{"SubjectEntity": "Mike Pence", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Viorica Agarici", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [0]}
-{"SubjectEntity": "Lovro Pi\u010dman", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [0]}
-{"SubjectEntity": "Emily Blunt", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Victor Mature", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Alanis Morissette", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [3]}
-{"SubjectEntity": "Elvira Nabiullina", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "John Quincy Adams", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [1]}
-{"SubjectEntity": "Vlado Gotovac", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [3]}
-{"SubjectEntity": "Andrzej Wielowieyski", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Cloris Leachman", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [1]}
-{"SubjectEntity": "Hele K\u00f5rve", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [1]}
-{"SubjectEntity": "Festus Mogae", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [1]}
-{"SubjectEntity": "Leonid Volkov", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Hugh Hefner", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [3]}
-{"SubjectEntity": "Herman Van Rompuy", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Roy E. Disney", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Donna Reed", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [3]}
-{"SubjectEntity": "Manuel Fraga Iribarne", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [1]}
-{"SubjectEntity": "Misha Collins", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Emil Salim", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [3]}
-{"SubjectEntity": "Endre B\u00edr\u00f3", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "I. M. Pei", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [4]}
-{"SubjectEntity": "Jensen Ackles", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [1]}
-{"SubjectEntity": "David Levering Lewis", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Reinhard Mey", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [3]}
-{"SubjectEntity": "Ruth Bader Ginsburg", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Theodor Curtius", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Leonhard Sohncke", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [4]}
-{"SubjectEntity": "Judith Colell", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "May Whitty", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [1]}
-{"SubjectEntity": "Logic", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [1]}
-{"SubjectEntity": "Christian Meier", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Clarence Brown", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [0]}
-{"SubjectEntity": "Susan Wojcicki", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [1]}
-{"SubjectEntity": "Levy Mwanawasa", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [1]}
-{"SubjectEntity": "Roman Kostomarov", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [3]}
-{"SubjectEntity": "Anna Paquin", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [3]}
-{"SubjectEntity": "Bernardino Machado", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [0]}
-{"SubjectEntity": "Jane Alexander", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Concha Velasco", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [4]}
-{"SubjectEntity": "Cindy Williams", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Barbara Schett", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [1]}
-{"SubjectEntity": "Diane Lane", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [3]}
-{"SubjectEntity": "Jacek Kuro\u0144", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Gertraud Well", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [3]}
-{"SubjectEntity": "Diosdado Cabello", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": [5]}
-{"SubjectEntity": "Ina May Gaskin", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [1]}
-{"SubjectEntity": "George R. Christmas", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [3]}
-{"SubjectEntity": "Endre Bojt\u00e1r", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "M\u0101ris \u010caklais", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [0]}
-{"SubjectEntity": "Margret Middell", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [0]}
-{"SubjectEntity": "Natalya Gramolina", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [4]}
-{"SubjectEntity": "Milan Lasica", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Yefim Basin", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "George Akerlof", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [1]}
-{"SubjectEntity": "Kumar Bhattacharyya, Baron Bhattacharyya", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [4]}
-{"SubjectEntity": "Svetlana Morgunova", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Ted Green", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Godfrey Hewitt", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [0]}
-{"SubjectEntity": "Orlando Patterson", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Robert Saladrigas", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [3]}
-{"SubjectEntity": "Aleksandr Anipkin", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [0]}
-{"SubjectEntity": "Richard Chew", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Vladimir", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Basina Kloos", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Punathil Kunjabdulla", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [0]}
-{"SubjectEntity": "John L. Borling", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Pavel \u0160rut", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Berit M\u00f8rdre Lammedal", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [0]}
-{"SubjectEntity": "Alessandra Melucco Vaccaro", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [4]}
-{"SubjectEntity": "Christoph Eschenbach", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [1]}
-{"SubjectEntity": "J\u016br\u014d Kara", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [3]}
-{"SubjectEntity": "Asaf Durakovi\u0107", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [0]}
+{"SubjectEntity": "Frederick Browning", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Michael Snow", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Peter Ramsbotham", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["1"]}
+{"SubjectEntity": "Roger Moore", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Marjatta Kurenniemi", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Henry Worsley", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["0"]}
+{"SubjectEntity": "Jennifer Connelly", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["0", "5"]}
+{"SubjectEntity": "Carlyle Glean", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["0", "2", "3"]}
+{"SubjectEntity": "Patricia Heaton", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Mario Clavell", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["1"]}
+{"SubjectEntity": "Claudio Amendola", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["4", "6"]}
+{"SubjectEntity": "Eliot Spitzer", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Marika \u0160oposk\u00e1", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Jean Simmons", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["3"]}
+{"SubjectEntity": "Bernie Ecclestone", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Tony Bennett", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Antonio Banderas", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Rutger Hauer", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["1"]}
+{"SubjectEntity": "Casey Affleck", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Thomas de Mahy, marquis de Favras", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["0"]}
+{"SubjectEntity": "Angela Kinsey", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["1"]}
+{"SubjectEntity": "Richard Gere", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["0"]}
+{"SubjectEntity": "Mike Pence", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Viorica Agarici", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["0"]}
+{"SubjectEntity": "Lovro Pi\u010dman", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["0"]}
+{"SubjectEntity": "Emily Blunt", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Victor Mature", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Alanis Morissette", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["3"]}
+{"SubjectEntity": "Elvira Nabiullina", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "John Quincy Adams", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["1"]}
+{"SubjectEntity": "Vlado Gotovac", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["3"]}
+{"SubjectEntity": "Andrzej Wielowieyski", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Cloris Leachman", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["1"]}
+{"SubjectEntity": "Hele K\u00f5rve", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["1"]}
+{"SubjectEntity": "Festus Mogae", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["1"]}
+{"SubjectEntity": "Leonid Volkov", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Hugh Hefner", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["3"]}
+{"SubjectEntity": "Herman Van Rompuy", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Roy E. Disney", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Donna Reed", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["3"]}
+{"SubjectEntity": "Manuel Fraga Iribarne", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["1"]}
+{"SubjectEntity": "Misha Collins", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Emil Salim", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["3"]}
+{"SubjectEntity": "Endre B\u00edr\u00f3", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "I. M. Pei", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["4"]}
+{"SubjectEntity": "Jensen Ackles", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["1"]}
+{"SubjectEntity": "David Levering Lewis", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Reinhard Mey", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["3"]}
+{"SubjectEntity": "Ruth Bader Ginsburg", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Theodor Curtius", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Leonhard Sohncke", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["4"]}
+{"SubjectEntity": "Judith Colell", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "May Whitty", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["1"]}
+{"SubjectEntity": "Logic", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["1"]}
+{"SubjectEntity": "Christian Meier", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Clarence Brown", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["0"]}
+{"SubjectEntity": "Susan Wojcicki", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["1"]}
+{"SubjectEntity": "Levy Mwanawasa", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["1"]}
+{"SubjectEntity": "Roman Kostomarov", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["3"]}
+{"SubjectEntity": "Anna Paquin", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["3"]}
+{"SubjectEntity": "Bernardino Machado", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["0"]}
+{"SubjectEntity": "Jane Alexander", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Concha Velasco", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["4"]}
+{"SubjectEntity": "Cindy Williams", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Barbara Schett", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["1"]}
+{"SubjectEntity": "Diane Lane", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["3"]}
+{"SubjectEntity": "Jacek Kuro\u0144", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Gertraud Well", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["3"]}
+{"SubjectEntity": "Diosdado Cabello", "Relation": "PersonHasNumberOfChildren", "ObjectEntitiesID": ["5"]}
+{"SubjectEntity": "Ina May Gaskin", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["1"]}
+{"SubjectEntity": "George R. Christmas", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["3"]}
+{"SubjectEntity": "Endre Bojt\u00e1r", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "M\u0101ris \u010caklais", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["0"]}
+{"SubjectEntity": "Margret Middell", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["0"]}
+{"SubjectEntity": "Natalya Gramolina", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["4"]}
+{"SubjectEntity": "Milan Lasica", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Yefim Basin", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "George Akerlof", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["1"]}
+{"SubjectEntity": "Kumar Bhattacharyya, Baron Bhattacharyya", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["4"]}
+{"SubjectEntity": "Svetlana Morgunova", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Ted Green", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Godfrey Hewitt", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["0"]}
+{"SubjectEntity": "Orlando Patterson", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Robert Saladrigas", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["3"]}
+{"SubjectEntity": "Aleksandr Anipkin", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["0"]}
+{"SubjectEntity": "Richard Chew", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Vladimir", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Basina Kloos", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Punathil Kunjabdulla", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["0"]}
+{"SubjectEntity": "John L. Borling", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Pavel \u0160rut", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Berit M\u00f8rdre Lammedal", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["0"]}
+{"SubjectEntity": "Alessandra Melucco Vaccaro", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["4"]}
+{"SubjectEntity": "Christoph Eschenbach", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["1"]}
+{"SubjectEntity": "J\u016br\u014d Kara", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["3"]}
+{"SubjectEntity": "Asaf Durakovi\u0107", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["0"]}
 {"SubjectEntity": "Gunther Kress", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["Q55636518"]}
 {"SubjectEntity": "Paolo Borsellino", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["Q4233718"]}
-{"SubjectEntity": "Imre Kozma", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [2, 3]}
-{"SubjectEntity": "Joseph L. Goldstein", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [3]}
-{"SubjectEntity": "Ad Gerritsen", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [5]}
-{"SubjectEntity": "James E. Livingston", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [4]}
-{"SubjectEntity": "Anja Silja", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Tabar\u00e9 V\u00e1zquez", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Maurizio Moreno", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [3]}
-{"SubjectEntity": "Vicente Fern\u00e1ndez", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Jerry Lucas", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [1]}
-{"SubjectEntity": "Aleksandr Proshkin", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Hennadii Dolzhenko", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [0]}
-{"SubjectEntity": "Jack Nicklaus", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [1]}
-{"SubjectEntity": "Klaus-Dieter Lehmann", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [2]}
-{"SubjectEntity": "Stan Mikita", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [4]}
-{"SubjectEntity": "Ren\u00e9 Koering", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [3]}
+{"SubjectEntity": "Imre Kozma", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["2", "3"]}
+{"SubjectEntity": "Joseph L. Goldstein", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["3"]}
+{"SubjectEntity": "Ad Gerritsen", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["5"]}
+{"SubjectEntity": "James E. Livingston", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["4"]}
+{"SubjectEntity": "Anja Silja", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Tabar\u00e9 V\u00e1zquez", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Maurizio Moreno", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["3"]}
+{"SubjectEntity": "Vicente Fern\u00e1ndez", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Jerry Lucas", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["1"]}
+{"SubjectEntity": "Aleksandr Proshkin", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Hennadii Dolzhenko", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["0"]}
+{"SubjectEntity": "Jack Nicklaus", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["1"]}
+{"SubjectEntity": "Klaus-Dieter Lehmann", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["2"]}
+{"SubjectEntity": "Stan Mikita", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["4"]}
+{"SubjectEntity": "Ren\u00e9 Koering", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["3"]}
 {"SubjectEntity": "Fran\u00e7ois Piquet", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [""]}
 {"SubjectEntity": "Sherko Bekas", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": ["Q16555"]}
 {"SubjectEntity": "Mariusz Hermansdorfer", "Relation": "PersonHasPlaceOfDeath", "ObjectEntitiesID": [""]}
