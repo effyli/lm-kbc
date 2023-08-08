@@ -8,7 +8,7 @@ import logging
 from datetime import datetime
 from prompt import REprompt
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "YOUR API KEY HERE"
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
 # Read jsonl file containing LM-KBC data
