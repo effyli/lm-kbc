@@ -9,8 +9,8 @@ from retry import retry
 from datetime import datetime
 from prompt import REprompt
 
+os.environ["OPENAI_API_KEY"] = "YOUR KEY HERE"
 # os.environ["OPENAI_API_KEY"] = ""
-os.environ["OPENAI_API_KEY"] = "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"
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
 # Read jsonl file containing LM-KBC data
