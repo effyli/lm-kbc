@@ -10,7 +10,7 @@ from datetime import datetime
 from prompt import REprompt
 
 # os.environ["OPENAI_API_KEY"] = ""
-os.environ["OPENAI_API_KEY"] = "YOUR API KEY HERE"
+os.environ["OPENAI_API_KEY"] = "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"
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
 # Read jsonl file containing LM-KBC data
@@ -72,14 +72,18 @@ if __name__ == '__main__':
     logging_file = "logging_prompt_{}_time_{}.log".format(prompt_type, now.strftime("%m-%d-%Y-%H:%M:%S"))
     logging.basicConfig(filename=logging_file, filemode='w', format='%(name)s - %(levelname)s - %(message)s')
     logging.warning('Start logging')
+    
+    # print("test-1")
 
     # output_file = "extraction_prompt_{}_time_{}.txt".format(prompt_type, now.strftime("%m-%d-%Y-%H:%M:%S"))
     output_file = "extraction_prompt_langchain_time_08-08-2023-16:35:03.txt"
     output_file_path = os.path.join(output_dir, output_file)
 
     # load data
-    train_path = os.path.join(data_dir, 'train.jsonl')
+    train_path = os.path.join(data_dir, 'train-output.jsonl')
     train_data = read_lm_kbc_jsonl(train_path)
+    
+    # print("test0")
 
     if use_langchain:
         # use all training examples to select "shots" from
@@ -88,10 +92,18 @@ if __name__ == '__main__':
             subject = line['SubjectEntity']
             relation = line['Relation']
             objects = str(line['ObjectEntities'])
+
             instance_dict = dict()
+            
             instance_dict['entity_1'] = subject
-            instance_dict['relation'] = relation
+            # instance_dict['relation'] = relation
             instance_dict['target_entities'] = objects
+
+            instance_dict['wiki_label'] = line['wikidata_label']
+            # instance_dict['domain'] = line['domain']
+            # instance_dict['range'] = line['range']
+            # instance_dict['exp'] = line['explanation']
+
             examples.append(instance_dict)
 
     # build the template
@@ -99,7 +111,7 @@ if __name__ == '__main__':
     logging.warning("Prompt template created: {}".format(prompt_template))
 
     # load validation test
-    val_path = os.path.join(data_dir, 'val.jsonl')
+    val_path = os.path.join(data_dir, 'random_val_sample2-output.jsonl')
     val_data = read_lm_kbc_jsonl(val_path)
 
     logging.warning("Start prompting")
@@ -107,14 +119,28 @@ if __name__ == '__main__':
     logging_data_level = 10
     # prompting the validation set
     extraction_output = []
+
+    # print("test1")
+
     # streaming save while prompting
-    for i, line in tqdm(enumerate((val_data[1246:]))):
+    for i, line in tqdm(enumerate(val_data)):
         print("{} samples processed, {} left. {} % processed".format(i, len(val_data) - i, (i/(len(val_data) - i)) * 100))
         if i % logging_data_level == 0:
             logging.warning("{} samples prompt, {} left".format(i, len(val_data) - i))
+        
         input_sbj = line['SubjectEntity']
-        input_relation = line['Relation']
-        prompt = prompt_template.format(entity_1=input_sbj, relation=input_relation)
+        # input_relation = line['Relation']
+        # print(line)
+        
+        wiki_relation_label = line['wikidata_label']
+        # wiki_relation_domain = line['domain']
+        # wiki_relation_range = line['range']
+        # wiki_relation_explanation = line['explanation']
+        
+        prompt = prompt_template.format(entity_1=input_sbj, wiki_label=wiki_relation_label)
+        # print(prompt)
+
+
         extraction = GPT3response(prompt, temperature=temperature)
         print(extraction)
         with open(output_file_path, 'a') as f:

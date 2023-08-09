@@ -19,10 +19,10 @@ class REprompt:
 
         # We use the `PromptTemplate` class for this.
         example_formatter_template = """
-            Subject: {entity_1} => Predicate: {relation} => Object: {target_entities}
+            Subject: {entity_1} => Predicate: '{wiki_label}' => Object: {target_entities}
             """
         example_prompt = PromptTemplate(
-            input_variables=["entity_1", "relation", "target_entities"],
+            input_variables=["entity_1", "target_entities", "wiki_label"],
             template=example_formatter_template,
         )
         # test_prompt1 = example_prompt.format(entity_1='Siemens-Schuckert', relation='CompanyHasParentOrganisation',
@@ -51,10 +51,10 @@ class REprompt:
                 Here are some examples: """,
             # The suffix is some text that goes after the examples in the prompt.
             # Usually, this is where the user input will go
-            suffix="""End of the examples. Now it is your turn to generate.
-                Subject: {entity_1} => Predicate: {relation} => Objects: ??? """,
+            suffix="""End of the examples. Now it is your turn to generate. Note that I only expect list of string Objects as results.
+                Subject: {entity_1} => Predicate: {wiki_label} => Objects: ??? """,
             # The input variables are the variables that the overall prompt expects.
-            input_variables=["entity_1", "relation"],
+            input_variables=["entity_1", "wiki_label"],
             # The example_separator is the string we will use to join the prefix, examples, and suffix together with.
             example_separator="\n",
         )
