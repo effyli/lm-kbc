@@ -8,11 +8,12 @@ import logging
 from retry import retry
 from datetime import datetime
 from prompt import REprompt
-from example_selection import ExampleSelection
+from compile_prompt import generate_prompt
 
-os.environ["OPENAI_API_KEY"] = "YOUR KEY HERE"
+os.environ["OPENAI_API_KEY"] = "API KEY HERE"
 # os.environ["OPENAI_API_KEY"] = ""
 openai.api_key = os.environ["OPENAI_API_KEY"]
+
 
 # Read jsonl file containing LM-KBC data
 def read_lm_kbc_jsonl(file_path: str):
@@ -28,7 +29,7 @@ def read_lm_kbc_jsonl(file_path: str):
 def GPT3response(q, temperature, model="gpt-3.5-turbo", max_tokens=500):
     response = openai.ChatCompletion.create(
         # curie is factor of 10 cheaper than davinci, but correspondingly less performant
-        #model="text-davinci-003",
+        # model="text-davinci-003",
         model=model,
         messages=[{"role": "assistant", "content": q}],
         temperature=temperature,
@@ -57,7 +58,8 @@ if __name__ == '__main__':
     parser.add_argument('-d', '--directory', required=True, help="Directory where you store the data")
     parser.add_argument('-o', '--output_directory', required=True, help="Directory where to store the extraction")
     parser.add_argument('-t', '--temperature', default=0, help="Temperature used for GPT model")
-    parser.add_argument('-l', '--use_langchain', action='store_true', help="Boolean value to indicate whether to use langchain or not")
+    parser.add_argument('-l', '--use_langchain', action='store_true',
+                        help="Boolean value to indicate whether to use langchain or not")
 
     args = parser.parse_args()
 
@@ -73,7 +75,7 @@ if __name__ == '__main__':
     logging_file = "logging_prompt_{}_time_{}.log".format(prompt_type, now.strftime("%m-%d-%Y-%H:%M:%S"))
     logging.basicConfig(filename=logging_file, filemode='w', format='%(name)s - %(levelname)s - %(message)s')
     logging.warning('Start logging')
-    
+
     # print("test-1")
 
     output_file = "extraction_prompt_{}_time_{}.jsonl".format(prompt_type, now.strftime("%m-%d-%Y-%H:%M:%S"))
@@ -83,7 +85,7 @@ if __name__ == '__main__':
     # load data
     train_path = os.path.join(data_dir, 'train-output.jsonl')
     train_data = read_lm_kbc_jsonl(train_path)
-    
+
     # print("test0")
 
     if use_langchain:
@@ -95,7 +97,7 @@ if __name__ == '__main__':
             objects = str(line['ObjectEntities'])
 
             instance_dict = dict()
-            
+
             instance_dict['entity_1'] = subject
             # instance_dict['relation'] = relation
             instance_dict['target_entities'] = objects
@@ -107,15 +109,13 @@ if __name__ == '__main__':
 
             examples.append(instance_dict)
 
-            # build the template
-            prompt_template = REprompt(use_langchain=use_langchain, examples=examples).template
-    else:
-        prompt_template = "custom"
-
+    # build the template
+    # prompt_template = REprompt(use_langchain=use_langchain, examples=examples).template
+    prompt_template = ""
     logging.warning("Prompt template created: {}".format(prompt_template))
 
     # load validation test
-    val_path = os.path.join(data_dir, 'val-output.jsonl')
+    val_path = os.path.join(data_dir, 'random_val_sample2-output.jsonl')
     val_data = read_lm_kbc_jsonl(val_path)
     print("length of val dataset {}".format(val_data))
 
@@ -127,28 +127,16 @@ if __name__ == '__main__':
     # streaming save while prompting
     for i, line in tqdm(enumerate(val_data)):
         input_sbj = line['SubjectEntity']
-        input_relation = line['Relation']
+        # input_relation = line['Relation']
         # print(line)
-        
+
         wiki_relation_label = line['wikidata_label']
         # wiki_relation_domain = line['domain']
         # wiki_relation_range = line['range']
         # wiki_relation_explanation = line['explanation']
 
-
-        if use_langchain:
-            prompt = prompt_template.format(entity_1=input_sbj, wiki_label=wiki_relation_label)
-        else:
-            # Set this param
-            examples = ExampleSelection()
-            trainingDataPath = os.path.join(data_dir,"train.json")
-            dataStatsPath = os.path.join(data_dir,"data-stats.csv")
-            examples.load_data_stats(dataStatsPath)
-
-
-            list_examples = examples.get_examples(relation = input_relation, numberExamples = 5, trainingFile = trainingDataPath, set_type= 'Train')
-            prompt = f""" Act like a knowledge engineer and can you give me the object for this subject {input_sbj} and relation {input_relation}. Here are some examples {list_examples}. Please give me the results in the same format as the examples"""
-
+        # prompt = prompt_template.format(entity_1=input_sbj, wiki_label=wiki_relation_label)
+        prompt = generate_prompt(subj=input_sbj, rel=wiki_relation_label)
         # print(prompt)
 
         extraction = GPT3response(prompt, temperature=temperature)
@@ -164,14 +152,3 @@ if __name__ == '__main__':
         extraction_output.append(line)
     logging.warning("Prompting finished")
     print(len(extraction_output))
-
-
-
-
-
-
-
-
-
-
-
