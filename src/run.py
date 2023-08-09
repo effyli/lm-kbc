@@ -10,7 +10,7 @@ from datetime import datetime
 from prompt import REprompt
 
 # os.environ["OPENAI_API_KEY"] = ""
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "OPENAI_API_KEY"
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
 # Read jsonl file containing LM-KBC data
