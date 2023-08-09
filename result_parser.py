@@ -97,7 +97,7 @@ def align_pedictions_with_validation(predictions: list, original_file: str):
         wikidata_cache = load_wikidata_cache() 
                
         for y in ys:
-            if parsed_x["Relation"] == ( "PersonHasNumberOfChildren" or "SeriesHasNumberOfEpisodes" ):
+            if parsed_x["Relation"] in [ "PersonHasNumberOfChildren" , "SeriesHasNumberOfEpisodes" ]:
                 wikidata_ids.append(y)
             elif y in wikidata_cache:
                 wikidata_ids.append(str(wikidata_cache[y]))
@@ -134,7 +134,7 @@ if __name__ == "__main__":
     parser.add_argument('-o', '--output_directory', required=True, help="Directory where to store parsed result")
 
     args = parser.parse_args()
-    extraction_file = args.extraction_file
+    extraction_file = args.prediction_file
     original_file = args.original_input_file
     output_directory = args.output_directory
     # extraction_file = "extractions/extraction_prompt_langchain_time_08-09-2023-11:54:15.jsonl"

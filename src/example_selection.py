@@ -24,7 +24,7 @@ class ExampleSelection:
                 range_data[relation][header] = (min_val, max_val)
         return range_data
 
-    def get_relation_examples(relationString, numberExamples, jsonlFile, set_type, range_data):
+    def get_relation_examples(self, relationString, numberExamples, jsonlFile, set_type, range_data):
         examples = []
         min_val, max_val = range_data[relationString][set_type]
 
@@ -77,12 +77,13 @@ class ExampleSelection:
             dataset = file.read()
         self.range_data = self.parse_range_data(dataset)
 
-    def get_examples(self, relationString, numberExamples, set_type, trainingFile):
+    def get_examples(self, relationString, numberExamples, set_type, training_file, range_data):
         self.relation = relationString
         self.typeFile = set_type
         self.numberExamples = numberExamples
-        jsonlFile = trainingFile
-        self.examples = self.get_relation_examples(relationString, numberExamples, jsonlFile, set_type)
+        jsonlFile = training_file
+        # print(self.relation, self.typeFile)
+        self.examples = self.get_relation_examples(relationString, numberExamples, jsonlFile, set_type, range_data)
         return self.examples
 
 

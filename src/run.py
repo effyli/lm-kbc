@@ -9,8 +9,9 @@ from retry import retry
 from datetime import datetime
 from prompt import REprompt
 from compile_prompt import generate_prompt
+from example_selection import ExampleSelection
 
-os.environ["OPENAI_API_KEY"] = "API KEY HERE"
+os.environ["OPENAI_API_KEY"] = "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"
 # os.environ["OPENAI_API_KEY"] = ""
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
@@ -58,8 +59,7 @@ if __name__ == '__main__':
     parser.add_argument('-d', '--directory', required=True, help="Directory where you store the data")
     parser.add_argument('-o', '--output_directory', required=True, help="Directory where to store the extraction")
     parser.add_argument('-t', '--temperature', default=0, help="Temperature used for GPT model")
-    parser.add_argument('-l', '--use_langchain', action='store_true',
-                        help="Boolean value to indicate whether to use langchain or not")
+    parser.add_argument('-l', '--use_langchain', default=False, help="Boolean value to indicate whether to use langchain or not")
 
     args = parser.parse_args()
 
@@ -68,6 +68,7 @@ if __name__ == '__main__':
     output_dir = args.output_directory
     temperature = args.temperature
     use_langchain = args.use_langchain
+    print(use_langchain)
 
     # set up loggings
     prompt_type = "langchain" if use_langchain else "manual"
@@ -88,6 +89,7 @@ if __name__ == '__main__':
 
     # print("test0")
 
+    prompt_template = ""
     if use_langchain:
         # use all training examples to select "shots" from
         examples = []
@@ -109,10 +111,10 @@ if __name__ == '__main__':
 
             examples.append(instance_dict)
 
-    # build the template
-    # prompt_template = REprompt(use_langchain=use_langchain, examples=examples).template
-    prompt_template = ""
-    logging.warning("Prompt template created: {}".format(prompt_template))
+        # build the template
+        # prompt_template = REprompt(use_langchain=use_langchain, examples=examples).template
+        prompt_template = ""
+        logging.warning("Prompt template created: {}".format(prompt_template))
 
     # load validation test
     val_path = os.path.join(data_dir, 'random_val_sample2-output.jsonl')
@@ -127,16 +129,112 @@ if __name__ == '__main__':
     # streaming save while prompting
     for i, line in tqdm(enumerate(val_data)):
         input_sbj = line['SubjectEntity']
-        # input_relation = line['Relation']
+        input_relation = line['Relation']
         # print(line)
 
         wiki_relation_label = line['wikidata_label']
-        # wiki_relation_domain = line['domain']
-        # wiki_relation_range = line['range']
-        # wiki_relation_explanation = line['explanation']
+        wiki_relation_domain = line['domain']
+        wiki_relation_range = line['range']
+        wiki_relation_explanation = line['explanation']
 
-        # prompt = prompt_template.format(entity_1=input_sbj, wiki_label=wiki_relation_label)
-        prompt = generate_prompt(subj=input_sbj, rel=wiki_relation_label)
+        prompt = ""
+        
+        if use_langchain:
+            # prompt = prompt_template.format(entity_1=input_sbj, wiki_label=wiki_relation_label)
+            prompt = generate_prompt(subj=input_sbj, rel=input_relation)
+            print(prompt)
+        else:
+            # Set this param
+            examples = ExampleSelection()
+            trainingDataPath = os.path.join(data_dir,"train-output.jsonl")
+            dataStatsPath = os.path.join(data_dir,"data-stats.csv")
+            examples.load_data_stats(dataStatsPath)
+            range_data = examples.range_data
+
+            # get_examples(self, relationString, numberExamples, set_type, training_file, range_data):
+            list_examples = examples.get_examples(input_relation, 5, 'Train', trainingDataPath, range_data)
+            min_val, max_val = range_data[input_relation]['Train']
+            # print(len(list_examples))
+            # print(list_examples)
+            
+            prefix = """
+            I would like to use you as a knowledge base. I am going to give you an entity and relation pair. 
+            I want you to generate new entities holding the relation with the given entity. 
+            Number of answers may vary between {} to {}. 
+            I will show you some examples. Act like a knowledge base and do your best! Here we start. Examples: """
+            example_formatter_template = """
+                Given Entity: '{}' 
+                Domain of the Given Entity: '{}'  
+                Range of the Given Entity:: '{}' 
+                Given Relation: '{}' 
+                Wikidata label of the given relation: '{}' 
+                Wikidata explanation of the given relation: '{}'. 
+                ==> 
+                Target entities: {} 
+                """
+            suffix = """
+            End of the examples. Now it is your turn to generate.
+
+                Given Entity: '{}' 
+                Domain of the Given Entity: '{}'  
+                Range of the Given Entity:: '{}' 
+                Given Relation: '{}' 
+                Wikidata label of the given relation: '{}' 
+                Wikidata explanation of the given relation: '{}'. 
+                ==> 
+                Target entities: ??? 
+                """
+            # The input variables are the variables that the overall prompt expects.
+            input_variables=["entity_1", "wiki_label"]
+            # The example_separator is the string we will use to join the prefix, examples, and suffix together with.
+            example_separator="\n"
+
+            prompt = ""
+            prompt += prefix.format(min_val, max_val)
+            prompt += example_separator
+            for example in list_examples:
+                prompt += example_formatter_template.format(example['SubjectEntity'], 
+                                                            example['domain'], 
+                                                            example['range'],  
+                                                            example['Relation'], 
+                                                            example['wikidata_label'],
+                                                            example['explanation'], 
+                                                            example['ObjectEntities'])
+                # prompt += example_separator
+            prompt += suffix.format(input_sbj, 
+                                    wiki_relation_domain,
+                                    wiki_relation_range,
+                                    input_relation,
+                                    wiki_relation_label,
+                                    wiki_relation_explanation)
+
+            # prefix = """Generate objects holding the relation with the given subject.
+            #     Here are some examples: """
+            # example_formatter_template = """
+            #     Subject: {} => Predicate: '{}' => Object: {}
+            #     """
+            # suffix = """End of the examples. Now it is your turn to generate. Note that I only expect a set of string Objects as results without duplicates.
+            #     Subject: {} => Predicate: '{}' => Objects: ??? """
+            # # The input variables are the variables that the overall prompt expects.
+            # input_variables=["entity_1", "wiki_label"]
+            # # The example_separator is the string we will use to join the prefix, examples, and suffix together with.
+            # example_separator="\n"
+
+            # prompt = ""
+            # prompt += prefix
+            # prompt += example_separator
+            # for example in list_examples:
+            #     prompt += example_formatter_template.format(example['SubjectEntity'], example['wikidata_label'], example['ObjectEntities'])
+            #     # prompt += example_separator
+            # prompt += suffix.format(input_sbj, wiki_relation_label)
+
+
+            # prompt = f""" 
+            #     Act like a knowledge engineer and can you give me the object for this subject '{input_sbj}' and relation '{wiki_relation_label}'. 
+            #     Here are some examples {list_examples}. 
+            #     Please give me the results as list of ObjectEntities"""
+            # print(prompt)    
+
         # print(prompt)
 
         extraction = GPT3response(prompt, temperature=temperature)

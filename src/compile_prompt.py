@@ -151,7 +151,7 @@ def compile_prompt(string_template, example_variables,
 
 def generate_prompt(subj, rel,
                     input_file='../data/random_val_sample2.jsonl',
-                    wiki_properties='../data/random_val_sample2.jsonl',
+                    wiki_properties='../data/relevant_wiki_properties_by_chatgpt.json',
                     formatter="""Given Entity: {entity_1} 
                         Domain of the Given Entity: {domain}  
                         Range of the Given Entity:: {range} 
@@ -239,6 +239,8 @@ def generate_prompt(subj, rel,
     ent_1 = subj
     relation = rel
     rel_props = lookup_property_info(property_lookup, relation)
+    print(property_lookup)
+    print(rel_props)
     
     prompt = few_shot_template.format(entity_1= ent_1, relation=relation, 
                                   domain=rel_props['Domain'], 
