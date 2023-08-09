@@ -39,7 +39,7 @@ def parse_predictions() -> list:
     return predictions
 
 def parse_predictions_recent_format() -> list:
-    file = "extractions/extraction_prompt_langchain_time_08-08-2023-16:35:03.txt"
+    file = "src/extractions/extraction_prompt_langchain_time_08-08-2023-16:35:03.txt"
     results = []
     with open(file, 'r') as f:
         lines = f.readlines()
@@ -48,8 +48,8 @@ def parse_predictions_recent_format() -> list:
                 result_line = []
                 if '[' in line:
                     result_str = line.split('[')[1]
-                    if ']' in line:
-                        result_str = line.split(']')[0]
+                    if ']' in result_str:
+                        result_str = result_str.split(']')[0]
                     result_str_list = list(result_str.split(','))
                     for obj in result_str_list:
                         result_line.append(obj.strip().strip("'").strip())
@@ -70,19 +70,23 @@ def store_predictions(predictions: list) -> None:
 
 def align_pedictions_with_validation(predictions: list):
     # align predicitions with validationset
-    with open("data/val.jsonl", "r") as f:
+    with open("data/random_val_sample2.jsonl", "r") as f:
         validationset = f.readlines()
 
     all_results = list(zip(validationset, predictions))
+    # print(all_results)
 
     # prep prediction for eval
     updated_predictions = []
     for x, ys in all_results[:400]:
         parsed_x = json.loads(x)
         wikidata_ids = []
-        wikidata_cache = load_wikidata_cache()        
+        wikidata_cache = load_wikidata_cache() 
+               
         for y in ys:
-            if y in wikidata_cache:
+            if parsed_x["Relation"] == ( "PersonHasNumberOfChildren" or "SeriesHasNumberOfEpisodes" ):
+                wikidata_ids.append(y)
+            elif y in wikidata_cache:
                 wikidata_ids.append(str(wikidata_cache[y]))
             else:   
                 dismabiguated_wikidata_id = disambiguation_baseline(y)
@@ -109,9 +113,9 @@ def save_predictions_for_eval(updated_predictions: list) -> None:
 
 
 if __name__ == "__main__":
-    predictions = parse_predictions()
+    # predictions = parse_predictions()
     # TODO merge two different formats
-    # predictions = parse_predictions_recent_format()
+    predictions = parse_predictions_recent_format()
     store_predictions(predictions)
     updated_predictions = align_pedictions_with_validation(predictions)
     save_predictions_for_eval(updated_predictions)
