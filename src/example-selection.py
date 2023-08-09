@@ -4,7 +4,11 @@ import json
 class ExampleSelection:
     def __init__(self, working_dir):
         self.working_dir = working_dir
+        self.relation = None
+        self.numberExamples = None
+        self.fileName = None
         self.range_data = None
+        self.examples = None
 
     def parse_range_data(self, dataset):
         lines = dataset.strip().split("\n")
@@ -72,15 +76,18 @@ class ExampleSelection:
             dataset = file.read()
         self.range_data = self.parse_range_data(dataset)
 
-    def display_examples(self, relationString, numberExamples, set_type):
-        jsonlFile = self.working_dir + "/data/val.jsonl"
-        examples = self.get_relation_examples(relationString, numberExamples, jsonlFile, set_type)
-        for item in examples:
-            print(item)
+    def get_examples(self, relationString, numberExamples, set_type):
+        self.relation = relationString
+        self.numberExamples = numberExamples
+        self.fileName = set_type
+        jsonlFile = self.working_dir + "/data/train.jsonl"
+        self.examples = self.get_relation_examples(relationString, numberExamples, jsonlFile, set_type)
+        return self.examples
 
 
-# Usage:
-working_dir = "YOUR_WORKING_DIRECTORY_PATH"
-data = ExampleSelection(working_dir)
-data.load_data_stats(working_dir + "/data/data-stats.csv")
-data.display_examples("CompanyHasParentOrganisation", 5, "Val")
+
+# # Usage:
+# working_dir = "YOUR_WORKING_DIRECTORY_PATH"
+# data = ExampleSelection(working_dir)
+# data.load_data_stats(working_dir + "/data/data-stats.csv")
+# example_list = data.get_examples("CompanyHasParentOrganisation", 5, "Train")
