@@ -8,6 +8,7 @@ import logging
 from retry import retry
 from datetime import datetime
 from prompt import REprompt
+from example_selection import ExampleSelection
 
 os.environ["OPENAI_API_KEY"] = "YOUR KEY HERE"
 # os.environ["OPENAI_API_KEY"] = ""
@@ -106,8 +107,11 @@ if __name__ == '__main__':
 
             examples.append(instance_dict)
 
-    # build the template
-    prompt_template = REprompt(use_langchain=use_langchain, examples=examples).template
+            # build the template
+            prompt_template = REprompt(use_langchain=use_langchain, examples=examples).template
+    else:
+        prompt_template = "custom"
+
     logging.warning("Prompt template created: {}".format(prompt_template))
 
     # load validation test
@@ -123,15 +127,28 @@ if __name__ == '__main__':
     # streaming save while prompting
     for i, line in tqdm(enumerate(val_data)):
         input_sbj = line['SubjectEntity']
-        # input_relation = line['Relation']
+        input_relation = line['Relation']
         # print(line)
         
         wiki_relation_label = line['wikidata_label']
         # wiki_relation_domain = line['domain']
         # wiki_relation_range = line['range']
         # wiki_relation_explanation = line['explanation']
-        
-        prompt = prompt_template.format(entity_1=input_sbj, wiki_label=wiki_relation_label)
+
+
+        if use_langchain:
+            prompt = prompt_template.format(entity_1=input_sbj, wiki_label=wiki_relation_label)
+        else:
+            # Set this param
+            examples = ExampleSelection()
+            trainingDataPath = os.path.join(data_dir,"train.json")
+            dataStatsPath = os.path.join(data_dir,"data-stats.csv")
+            examples.load_data_stats(dataStatsPath)
+
+
+            list_examples = examples.get_examples(relation = input_relation, numberExamples = 5, trainingFile = trainingDataPath, set_type= 'Train')
+            prompt = f""" Act like a knowledge engineer and can you give me the object for this subject {input_sbj} and relation {input_relation}. Here are some examples {list_examples}. Please give me the results in the same format as the examples"""
+
         # print(prompt)
 
         extraction = GPT3response(prompt, temperature=temperature)
