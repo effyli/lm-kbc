@@ -12,5 +12,5 @@
 
 srun hostname
 source activate kgc
-python run.py -d ../data/ -o ../extractions/ -l
-
+#python run.py -d ../data/ -o ../extractions/ -l
+python ../result_parser.py

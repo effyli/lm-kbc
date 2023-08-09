@@ -38,28 +38,68 @@ def parse_predictions() -> list:
     print(len(predictions))
     return predictions
 
+
+# Read jsonl file containing LM-KBC data
+def read_jsonl(file_path: str):
+    data = []
+    with open(file_path, "r") as f:
+        for line in f:
+            data.append(json.loads(line))
+    return data
+
+
 def parse_predictions_recent_format() -> list:
-    file = "src/extractions/extraction_prompt_langchain_time_08-08-2023-16:35:03.txt"
+    file = "extractions/extraction_prompt_langchain_time_08-09-2023-11:54:15.jsonl"
+    data = read_jsonl(file)
     results = []
-    with open(file, 'r') as f:
-        lines = f.readlines()
-        for line in lines:
-            if line:
-                result_line = []
-                if '[' in line:
-                    result_str = line.split('[')[1]
-                    if ']' in result_str:
-                        result_str = result_str.split(']')[0]
-                    result_str_list = list(result_str.split(','))
-                    for obj in result_str_list:
-                        result_line.append(obj.strip().strip("'").strip())
-                elif line == '['']':
-                    result_line = []
-                else:
-                    result_line = []
+
+    for line in data:
+        prediction = line["Prediction"]
+        result_line = []
+        if prediction:
+            if '[' in prediction:
+                result_str = prediction.split('[')[1]
+                if ']' in result_str:
+                    result_str = result_str.split(']')[0]
+                result_str_list = list(result_str.split(','))
+                for obj in result_str_list:
+                    p_obj = obj.strip().strip("'").strip()
+                    if p_obj not in result_line:
+                        result_line.append(p_obj)
+            # elif line in ['['']', 'None']:
+            #     result_line = []
+            # else:
+            #     result_line = []
             results.append(result_line)
+        else:
+            # result_line = []
+            results.append(result_line)
+    print(results)
     print(len(results))
     return results
+
+# def parse_predictions_recent_format() -> list:
+#     file = "src/extractions/extraction_prompt_langchain_time_08-08-2023-16:35:03.txt"
+#     results = []
+#     with open(file, 'r') as f:
+#         lines = f.readlines()
+#         for line in lines:
+#             if "Predictions" in line:
+#                 result_line = []
+#                 if '[' in line:
+#                     result_str = line.split('[')[1]
+#                     if ']' in result_str:
+#                         result_str = result_str.split(']')[0]
+#                     result_str_list = list(result_str.split(','))
+#                     for obj in result_str_list:
+#                         result_line.append(obj.strip().strip("'").strip())
+#                 elif line == '['']':
+#                     result_line = []
+#                 else:
+#                     result_line = []
+#             results.append(result_line)
+#     print(len(results))
+#     return results
 
 
 def store_predictions(predictions: list) -> None:
@@ -70,7 +110,7 @@ def store_predictions(predictions: list) -> None:
 
 def align_pedictions_with_validation(predictions: list):
     # align predicitions with validationset
-    with open("data/random_val_sample2.jsonl", "r") as f:
+    with open("data/random_val_sample2-output.jsonl", "r") as f:
         validationset = f.readlines()
 
     all_results = list(zip(validationset, predictions))
@@ -78,7 +118,7 @@ def align_pedictions_with_validation(predictions: list):
 
     # prep prediction for eval
     updated_predictions = []
-    for x, ys in all_results[:400]:
+    for x, ys in all_results:
         parsed_x = json.loads(x)
         wikidata_ids = []
         wikidata_cache = load_wikidata_cache() 
@@ -97,6 +137,7 @@ def align_pedictions_with_validation(predictions: list):
             {
                 "SubjectEntity": parsed_x["SubjectEntity"],
                 "Relation": parsed_x["Relation"],
+                "ObjectEntitiesString": ys,
                 "ObjectEntitiesID": wikidata_ids,
             }
         )

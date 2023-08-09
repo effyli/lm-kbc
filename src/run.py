@@ -10,7 +10,7 @@ from datetime import datetime
 from prompt import REprompt
 
 # os.environ["OPENAI_API_KEY"] = ""
-os.environ["OPENAI_API_KEY"] = "OPENAI_API_KEY"
+os.environ["OPENAI_API_KEY"] = "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"
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
 # Read jsonl file containing LM-KBC data
@@ -75,8 +75,8 @@ if __name__ == '__main__':
     
     # print("test-1")
 
-    # output_file = "extraction_prompt_{}_time_{}.txt".format(prompt_type, now.strftime("%m-%d-%Y-%H:%M:%S"))
-    output_file = "extraction_prompt_langchain_time_08-08-2023-16:35:03.txt"
+    output_file = "extraction_prompt_{}_time_{}.jsonl".format(prompt_type, now.strftime("%m-%d-%Y-%H:%M:%S"))
+    # output_file = "extraction_prompt_langchain_time_08-08-2023-16:35:03.txt"
     output_file_path = os.path.join(output_dir, output_file)
 
     # load data
@@ -111,23 +111,17 @@ if __name__ == '__main__':
     logging.warning("Prompt template created: {}".format(prompt_template))
 
     # load validation test
-    val_path = os.path.join(data_dir, 'random_val_sample2-output.jsonl')
+    val_path = os.path.join(data_dir, 'val-output.jsonl')
     val_data = read_lm_kbc_jsonl(val_path)
+    print("length of val dataset {}".format(val_data))
 
     logging.warning("Start prompting")
     logging.warning("Validation set size, {}".format(len(val_data)))
-    logging_data_level = 10
     # prompting the validation set
     extraction_output = []
 
-    # print("test1")
-
     # streaming save while prompting
     for i, line in tqdm(enumerate(val_data)):
-        print("{} samples processed, {} left. {} % processed".format(i, len(val_data) - i, (i/(len(val_data) - i)) * 100))
-        if i % logging_data_level == 0:
-            logging.warning("{} samples prompt, {} left".format(i, len(val_data) - i))
-        
         input_sbj = line['SubjectEntity']
         # input_relation = line['Relation']
         # print(line)
@@ -140,15 +134,19 @@ if __name__ == '__main__':
         prompt = prompt_template.format(entity_1=input_sbj, wiki_label=wiki_relation_label)
         # print(prompt)
 
-
         extraction = GPT3response(prompt, temperature=temperature)
+        # save in a dictionary
+        line["Prediction"] = extraction
         print(extraction)
-        with open(output_file_path, 'a') as f:
-            f.write(extraction)
-            f.write("\n")
 
-        extraction_output.append(extraction)
+        # Open the JSONLines file in append mode
+        with open(output_file_path, 'a') as file:
+            # Convert dictionary to JSON string and write to the file
+            file.write(json.dumps(line) + '\n')
+
+        extraction_output.append(line)
     logging.warning("Prompting finished")
+    print(len(extraction_output))
 
 
 

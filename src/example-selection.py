@@ -80,7 +80,7 @@ class ExampleSelection:
 
 
 # Usage:
-working_dir = "YOUR_WORKING_DIRECTORY_PATH"
+working_dir = "."
 data = ExampleSelection(working_dir)
 data.load_data_stats(working_dir + "/data/data-stats.csv")
 data.display_examples("CompanyHasParentOrganisation", 5, "Val")
