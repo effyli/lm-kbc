@@ -1,4 +1,6 @@
 import re
+import os
+import argparse
 import json
 from baseline import disambiguation_baseline
 from src.wikidata_utils import load_wikidata_cache, update_wikidata_cache, wikidata_id_sort
@@ -38,39 +40,50 @@ def parse_predictions() -> list:
     print(len(predictions))
     return predictions
 
-def parse_predictions_recent_format() -> list:
-    file = "src/extractions/extraction_prompt_langchain_time_08-08-2023-16:35:03.txt"
+
+# Read jsonl file containing LM-KBC data
+def read_jsonl(file_path: str):
+    data = []
+    with open(file_path, "r") as f:
+        for line in f:
+            data.append(json.loads(line))
+    return data
+
+
+def parse_predictions_recent_format(file: str) -> list:
+    data = read_jsonl(file)
     results = []
-    with open(file, 'r') as f:
-        lines = f.readlines()
-        for line in lines:
-            if line:
-                result_line = []
-                if '[' in line:
-                    result_str = line.split('[')[1]
-                    if ']' in result_str:
-                        result_str = result_str.split(']')[0]
-                    result_str_list = list(result_str.split(','))
-                    for obj in result_str_list:
-                        result_line.append(obj.strip().strip("'").strip())
-                elif line == '['']':
-                    result_line = []
-                else:
-                    result_line = []
+
+    for line in data:
+        prediction = line["Prediction"]
+        result_line = []
+        if prediction:
+            if '[' in prediction:
+                result_str = prediction.split('[')[1]
+                if ']' in result_str:
+                    result_str = result_str.split(']')[0]
+                result_str_list = list(result_str.split(','))
+                for obj in result_str_list:
+                    p_obj = obj.strip().strip("'").strip()
+                    if p_obj not in result_line:
+                        result_line.append(p_obj)
             results.append(result_line)
+        else:
+            results.append(result_line)
+    print(results)
     print(len(results))
     return results
 
 
-def store_predictions(predictions: list) -> None:
+def store_predictions(predictions: list, pred_file: str = "predictions.json") -> None:
     # store predictions
-    with open("predictions.json", "w") as out_f:
+    with open(pred_file, "w") as out_f:
         json.dump(predictions, out_f)
 
 
-def align_pedictions_with_validation(predictions: list):
+def align_pedictions_with_validation(predictions: list, original_file: str):
     # align predicitions with validationset
-    with open("data/random_val_sample2.jsonl", "r") as f:
+    with open(original_file, "r") as f:
         validationset = f.readlines()
 
     all_results = list(zip(validationset, predictions))
@@ -78,7 +91,7 @@ def align_pedictions_with_validation(predictions: list):
 
     # prep prediction for eval
     updated_predictions = []
-    for x, ys in all_results[:400]:
+    for x, ys in all_results:
         parsed_x = json.loads(x)
         wikidata_ids = []
         wikidata_cache = load_wikidata_cache() 
@@ -97,15 +110,16 @@ def align_pedictions_with_validation(predictions: list):
             {
                 "SubjectEntity": parsed_x["SubjectEntity"],
                 "Relation": parsed_x["Relation"],
+                "ObjectEntitiesString": ys,
                 "ObjectEntitiesID": wikidata_ids,
             }
         )
     return updated_predictions
 
 
-def save_predictions_for_eval(updated_predictions: list) -> None:
+def save_predictions_for_eval(updated_predictions: list, out_file: str) -> None:
     # save
-    with open("prediction-for-eval.jsonl", "w") as f:
+    with open(out_file, "w") as f:
         # pretty dump json
         for x in updated_predictions:
             f.write(json.dumps(x))
@@ -113,9 +127,22 @@ def save_predictions_for_eval(updated_predictions: list) -> None:
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument('-p', '--prediction_file', required=True, help="File that contains the predictions, in a jsonl format")
+    parser.add_argument('-g', '--original_input_file', required=True, help="The original input file")
+    parser.add_argument('-o', '--output_directory', required=True, help="Directory where to store parsed result")
+
+    args = parser.parse_args()
+    extraction_file = args.extraction_file
+    original_file = args.original_input_file
+    output_directory = args.output_directory
+    # extraction_file = "extractions/extraction_prompt_langchain_time_08-09-2023-11:54:15.jsonl"
+
     # predictions = parse_predictions()
     # TODO merge two different formats
-    predictions = parse_predictions_recent_format()
+    predictions = parse_predictions_recent_format(extraction_file)
     store_predictions(predictions)
-    updated_predictions = align_pedictions_with_validation(predictions)
-    save_predictions_for_eval(updated_predictions)
+    updated_predictions = align_pedictions_with_validation(predictions, original_file)
+    output_file_path = os.path.join(output_directory, "prediction-for-eval.jsonl")
+    save_predictions_for_eval(updated_predictions, output_file_path)
