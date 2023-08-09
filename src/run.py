@@ -8,7 +8,7 @@ import logging
 from retry import retry
 from datetime import datetime
 from prompt import REprompt
-from example-selection import ExampleSelection
+from example_selection import ExampleSelection
 
 os.environ["OPENAI_API_KEY"] = "YOUR KEY HERE"
 # os.environ["OPENAI_API_KEY"] = ""
@@ -140,12 +140,13 @@ if __name__ == '__main__':
             prompt = prompt_template.format(entity_1=input_sbj, wiki_label=wiki_relation_label)
         else:
             # Set this param
-            working_dir = "/path/to/working_directory"
-            examples = ExampleSelection(working_dir)
+            examples = ExampleSelection()
+            trainingDataPath = os.path.join(data_dir,"train.json")
+            dataStatsPath = os.path.join(data_dir,"data-stats.csv")
+            examples.load_data_stats(dataStatsPath)
 
-            examples.load_data_stats(working_dir + "/data/data-stats.csv")
 
-            list_examples = examples.get_examples(working_dir = working_dir, relation = input_relation, numberExamples = 5, fileName = 'Train')
+            list_examples = examples.get_examples(relation = input_relation, numberExamples = 5, trainingFile = trainingDataPath, set_type= 'Train')
             prompt = f""" Act like a knowledge engineer and can you give me the object for this subject {input_sbj} and relation {input_relation}. Here are some examples {list_examples}. Please give me the results in the same format as the examples"""
 
         # print(prompt)

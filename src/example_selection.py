@@ -2,11 +2,12 @@ import random
 import json
 
 class ExampleSelection:
-    def __init__(self, working_dir):
-        self.working_dir = working_dir
+    def __init__(self):
+        # self.working_dir = working_dir
         self.relation = None
         self.numberExamples = None
-        self.fileName = None
+        self.typeFile = None
+        self.trainingFile = None
         self.range_data = None
         self.examples = None
 
@@ -76,11 +77,11 @@ class ExampleSelection:
             dataset = file.read()
         self.range_data = self.parse_range_data(dataset)
 
-    def get_examples(self, relationString, numberExamples, set_type):
+    def get_examples(self, relationString, numberExamples, set_type, trainingFile):
         self.relation = relationString
+        self.typeFile = set_type
         self.numberExamples = numberExamples
-        self.fileName = set_type
-        jsonlFile = self.working_dir + "/data/train.jsonl"
+        jsonlFile = trainingFile
         self.examples = self.get_relation_examples(relationString, numberExamples, jsonlFile, set_type)
         return self.examples
 
