@@ -11,7 +11,7 @@ from prompt import REprompt
 from compile_prompt import generate_prompt
 from example_selection import ExampleSelection
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 # os.environ["OPENAI_API_KEY"] = ""
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
@@ -57,6 +57,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
     parser.add_argument('-d', '--directory', required=True, help="Directory where you store the data")
+    parser.add_argument('-f', '--file_to_prompt', required=True, help="File that contains data to prompt, can be test.jsonl or val.jsonl")
     parser.add_argument('-o', '--output_directory', required=True, help="Directory where to store the extraction")
     parser.add_argument('-t', '--temperature', default=0, help="Temperature used for GPT model")
     parser.add_argument('-l', '--use_langchain', default=False, help="Boolean value to indicate whether to use langchain or not")
@@ -79,8 +80,8 @@ if __name__ == '__main__':
 
     # print("test-1")
 
-    output_file = "extraction_prompt_{}_time_{}.jsonl".format(prompt_type, now.strftime("%m-%d-%Y-%H:%M:%S"))
-    # output_file = "extraction_prompt_langchain_time_08-08-2023-16:35:03.txt"
+    # output_file = "extraction_prompt_{}_time_{}.jsonl".format(prompt_type, now.strftime("%m-%d-%Y-%H:%M:%S"))
+    output_file = "extractions.jsonl"
     output_file_path = os.path.join(output_dir, output_file)
 
     # load data
@@ -117,7 +118,8 @@ if __name__ == '__main__':
         logging.warning("Prompt template created: {}".format(prompt_template))
 
     # load validation test
-    val_path = os.path.join(data_dir, 'random_val_sample2-output.jsonl')
+    val_file = args.file_to_prompt
+    val_path = os.path.join(data_dir, val_file)
     val_data = read_lm_kbc_jsonl(val_path)
     print("length of val dataset {}".format(val_data))
 
@@ -156,33 +158,33 @@ if __name__ == '__main__':
             min_val, max_val = range_data[input_relation]['Train']
             # print(len(list_examples))
             # print(list_examples)
-            
+
             prefix = """
-            I would like to use you as a knowledge base. I am going to give you an entity and relation pair. 
-            I want you to generate new entities holding the relation with the given entity. 
-            Number of answers may vary between {} to {}. 
-            I will show you some examples. Act like a knowledge base and do your best! Here we start. Examples: """
+            Imagine you are emulating Wikidata’s knowledge. 
+            Your task is to predict objects based on the given subject and relation. 
+            The number of answers can range from {} to {}. 
+            Below are some examples for your reference: """
             example_formatter_template = """
-                Given Entity: '{}' 
-                Domain of the Given Entity: '{}'  
-                Range of the Given Entity:: '{}' 
-                Given Relation: '{}' 
-                Wikidata label of the given relation: '{}' 
-                Wikidata explanation of the given relation: '{}'. 
+                Example:
+                - Subject: ‘{}’
+                - Subject Type: ‘{}’
+                - Object Type: ‘{}’
+                - Relation: ‘{}’
+                - Relation Label (Wikidata): ‘{}’
+                - Relation Explanation (Wikidata): ‘{}’
                 ==> 
-                Target entities: {} 
+                Predicted Objects: {}
                 """
             suffix = """
-            End of the examples. Now it is your turn to generate.
-
-                Given Entity: '{}' 
-                Domain of the Given Entity: '{}'  
-                Range of the Given Entity:: '{}' 
-                Given Relation: '{}' 
-                Wikidata label of the given relation: '{}' 
-                Wikidata explanation of the given relation: '{}'. 
-                ==> 
-                Target entities: ??? 
+            End of examples. Now, it’s your turn:
+            - Given Subject: ‘{}’
+            - Subject Type: ‘{}’
+            - Object Type: ‘{}’
+            - Relation: ‘{}’
+            - Relation Label (Wikidata): ‘{}’
+            - Relation Explanation (Wikidata): ‘{}’
+            ==> 
+            Predicted Objects:
                 """
             # The input variables are the variables that the overall prompt expects.
             input_variables=["entity_1", "wiki_label"]
@@ -193,9 +195,9 @@ if __name__ == '__main__':
             prompt += prefix.format(min_val, max_val)
             prompt += example_separator
             for example in list_examples:
-                prompt += example_formatter_template.format(example['SubjectEntity'], 
-                                                            example['domain'], 
-                                                            example['range'],  
+                prompt += example_formatter_template.format(example['SubjectEntity'],
+                                                            example['domain'],
+                                                            example['range'],
                                                             example['Relation'], 
                                                             example['wikidata_label'],
                                                             example['explanation'], 
