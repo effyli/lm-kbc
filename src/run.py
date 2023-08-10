@@ -11,8 +11,9 @@ from prompt import REprompt
 from compile_prompt import generate_prompt
 from example_selection import ExampleSelection
 
-os.environ["OPENAI_API_KEY"] = "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"
-# os.environ["OPENAI_API_KEY"] = ""
+# os.environ["OPENAI_API_KEY"] = "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"
+# remove
+os.environ["OPENAI_API_KEY"] = "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"
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
 
@@ -60,6 +61,7 @@ if __name__ == '__main__':
     parser.add_argument('-o', '--output_directory', required=True, help="Directory where to store the extraction")
     parser.add_argument('-t', '--temperature', default=0, help="Temperature used for GPT model")
     parser.add_argument('-l', '--use_langchain', default=False, help="Boolean value to indicate whether to use langchain or not")
+    parser.add_argument('-m', '--model', default='gpt-3.5-turbo', help="The target OpenAI model to use")
 
     args = parser.parse_args()
 
@@ -158,31 +160,29 @@ if __name__ == '__main__':
             # print(list_examples)
             
             prefix = """
-            I would like to use you as a knowledge base. I am going to give you an entity and relation pair. 
-            I want you to generate new entities holding the relation with the given entity. 
-            Number of answers may vary between {} to {}. 
-            I will show you some examples. Act like a knowledge base and do your best! Here we start. Examples: """
+                Imagine you are emulating Wikidata's knowledge. 
+                Your task is to predict objects based on the given subject and relation. 
+                The number of answers can range from {} to {}. Below are some examples for your reference:
+                """
             example_formatter_template = """
-                Given Entity: '{}' 
-                Domain of the Given Entity: '{}'  
-                Range of the Given Entity:: '{}' 
-                Given Relation: '{}' 
-                Wikidata label of the given relation: '{}' 
-                Wikidata explanation of the given relation: '{}'. 
-                ==> 
-                Target entities: {} 
+            - Example:
+            - Subject: '{}'
+            - Subject Type: '{}'
+            - Object Type: '{}'
+            - Relation: '{}'
+            - Relation Label (Wikidata): '{}'
+            - Relation Explanation (Wikidata): '{}'
+            ==> Predicted Objects: {}
                 """
             suffix = """
-            End of the examples. Now it is your turn to generate.
-
-                Given Entity: '{}' 
-                Domain of the Given Entity: '{}'  
-                Range of the Given Entity:: '{}' 
-                Given Relation: '{}' 
-                Wikidata label of the given relation: '{}' 
-                Wikidata explanation of the given relation: '{}'. 
-                ==> 
-                Target entities: ??? 
+                End of examples. Now, it's your turn:
+                - Given Subject: '{}'
+                - Subject Type: '{}'
+                - Object Type: '{}'
+                - Relation: '{}'
+                - Relation Label (Wikidata): '{}'
+                - Relation Explanation (Wikidata): '{}'
+                ==> Predicted Objects:
                 """
             # The input variables are the variables that the overall prompt expects.
             input_variables=["entity_1", "wiki_label"]
