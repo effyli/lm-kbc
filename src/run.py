@@ -71,6 +71,8 @@ if __name__ == '__main__':
     output_dir = args.output_directory
     temperature = args.temperature
     use_langchain = args.use_langchain
+    model = args.model
+    print('Target model', model)
     print(use_langchain)
 
     # set up loggings
@@ -123,7 +125,7 @@ if __name__ == '__main__':
     val_file = args.file_to_prompt
     val_path = os.path.join(data_dir, val_file)
     val_data = read_lm_kbc_jsonl(val_path)
-    print("length of val dataset {}".format(val_data))
+    print("length of val dataset {}".format(len(val_data)))
 
     logging.warning("Start prompting")
     logging.warning("Validation set size, {}".format(len(val_data)))
@@ -241,7 +243,7 @@ if __name__ == '__main__':
 
         # print(prompt)
 
-        extraction = GPT3response(prompt, temperature=temperature)
+        extraction = GPT3response(prompt, temperature=temperature, model=model)
         # save in a dictionary
         line["Prediction"] = extraction
         print(extraction)

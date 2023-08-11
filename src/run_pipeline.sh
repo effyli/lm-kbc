@@ -14,7 +14,7 @@ output_dir="../extractions_random_100/"
 gold_file="../data/random_val_sample2-output.jsonl"
 
 # Run the first Python script with arguments in the background
-python run.py -d "$data_dir" -f "$file_to_prompt" -o "$output_dir" &
+python run.py -d "$data_dir" -f "$file_to_prompt" -o "$output_dir" -m "gpt-4" &
 
 # Capture the process ID of the first Python script
 run_py_pid=$!
