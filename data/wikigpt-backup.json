@@ -8,9 +8,9 @@
 		"explanation": "This property is used to indicate the members of a musical band or group."
 	},
 	"CityLocatedAtRiver": {
-		"value": "P206 - located on terrain feature",
+		"value": "P206",
 		"wikidata_id": "P206",
-		"wikidata_label": "located on",
+		"wikidata_label": "located on terrain feature",
 		"domain": "city",
 		"range": "river",
 		"explanation": "This property is used to indicate that a city is located at a specific river."

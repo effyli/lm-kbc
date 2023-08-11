@@ -1,0 +1,100 @@
+{"SubjectEntityID": "Q466871", "SubjectEntity": "Siemens-Schuckert", "ObjectEntitiesID": ["Q81230"], "ObjectEntities": ["Siemens"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q290661", "SubjectEntity": "Royal Boskalis Westminster", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q48822", "SubjectEntity": "Valspar", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q55931", "SubjectEntity": "Hyundai Motor Company", "ObjectEntitiesID": ["Q29311"], "ObjectEntities": ["Hyundai"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q315287", "SubjectEntity": "Qiagen", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q1464318", "SubjectEntity": "Toyota Motor Manufacturing Canada", "ObjectEntitiesID": ["Q53268"], "ObjectEntities": ["Toyota"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q302251", "SubjectEntity": "Frontier Developments", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q2283", "SubjectEntity": "Microsoft", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q319344", "SubjectEntity": "Abercrombie & Fitch", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q1455332", "SubjectEntity": "Steyr-SSF", "ObjectEntitiesID": ["Q99371808"], "ObjectEntities": ["General Dynamics European Land Systems"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q2311", "SubjectEntity": "Airbus Group", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q288694", "SubjectEntity": "Ballot", "ObjectEntitiesID": ["Q29068"], "ObjectEntities": ["Hispano-Suiza"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q35339", "SubjectEntity": "WWE", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q8774", "SubjectEntity": "International Airlines Group", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q59187", "SubjectEntity": "Vauxhall", "ObjectEntitiesID": ["Q97439162"], "ObjectEntities": ["Stellantis"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q48755", "SubjectEntity": "RPM International", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q1538336", "SubjectEntity": "Norinco", "ObjectEntitiesID": ["Q1629075"], "ObjectEntities": ["State-owned Assets Supervision and Administration Commission of the State Council"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q38076", "SubjectEntity": "McDonald\u2019s", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q462491", "SubjectEntity": "Berna", "ObjectEntitiesID": ["Q365515"], "ObjectEntities": ["Saurer"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q380", "SubjectEntity": "Meta Platforms", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q291090", "SubjectEntity": "China Southern Airlines", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q530568", "SubjectEntity": "North German Automobile and Engine", "ObjectEntitiesID": ["Q27377"], "ObjectEntities": ["Borgward"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q1626769", "SubjectEntity": "Honda de M\u00e9xico", "ObjectEntitiesID": ["Q9584"], "ObjectEntities": ["Honda"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q295261", "SubjectEntity": "AMP Limited", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q320662", "SubjectEntity": "Neue Automobil Gesellschaft", "ObjectEntitiesID": ["Q158276"], "ObjectEntities": ["AEG"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q27893", "SubjectEntity": "ArcelorMittal", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q292374", "SubjectEntity": "AGL Energy", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q28616", "SubjectEntity": "GAZ", "ObjectEntitiesID": ["Q260756"], "ObjectEntities": ["GAZ Group"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q384012", "SubjectEntity": "IzhAvto", "ObjectEntitiesID": ["Q2309"], "ObjectEntities": ["AvtoVAZ"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q167158", "SubjectEntity": "NedCar", "ObjectEntitiesID": ["Q1536474"], "ObjectEntities": ["VDL Groep"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q1626699", "SubjectEntity": "Honda T\u00fcrkiye", "ObjectEntitiesID": ["Q9584"], "ObjectEntities": ["Honda"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q329426", "SubjectEntity": "Danone", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q383746", "SubjectEntity": "Sachsenring Africar", "ObjectEntitiesID": ["Q469175"], "ObjectEntities": ["HQM Sachsenring GmbH"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q328249", "SubjectEntity": "Envitec Biogas", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q290188", "SubjectEntity": "Ansaldo", "ObjectEntitiesID": ["Q910379"], "ObjectEntities": ["Leonardo"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q40978", "SubjectEntity": "Pierce-Arrow", "ObjectEntitiesID": ["Q938876"], "ObjectEntities": ["Studebaker"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q292292", "SubjectEntity": "AGCO", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q1494782", "SubjectEntity": "Hafei Motor Co.", "ObjectEntitiesID": ["Q29366"], "ObjectEntities": ["Changan Automobile"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q313542", "SubjectEntity": "Tsingtao Brewery", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q291990", "SubjectEntity": "Arbonia AG", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q594355", "SubjectEntity": "S.P.A.", "ObjectEntitiesID": ["Q3071295"], "ObjectEntities": ["Fiat Industrial Vehicles"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q297879", "SubjectEntity": "ASML Holding", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q45600", "SubjectEntity": "Bitstream Inc.", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q608853", "SubjectEntity": "Pasquali vehicles", "ObjectEntitiesID": ["Q3631783"], "ObjectEntities": ["BCS Group"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q3489878", "SubjectEntity": "Sommer-Allibert", "ObjectEntitiesID": ["Q1570773"], "ObjectEntities": ["Kohlberg Kravis Roberts"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q333025", "SubjectEntity": "SES S.A.", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q7414", "SubjectEntity": "The Walt Disney Company", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q246", "SubjectEntity": "Volkswagen", "ObjectEntitiesID": ["Q156578"], "ObjectEntities": ["Volkswagen Group"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q26049", "SubjectEntity": "Aetna", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q1201531", "SubjectEntity": "Detroit Diesel", "ObjectEntitiesID": ["Q16834431"], "ObjectEntities": ["Daimler Truck North America"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q318670", "SubjectEntity": "OVB Holding", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q27460", "SubjectEntity": "Dacia", "ObjectEntitiesID": ["Q6686", "Q1477864"], "ObjectEntities": ["Renault", "Renault\u2013Nissan\u2013Mitsubishi Alliance"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q305393", "SubjectEntity": "First Pacific", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q285161", "SubjectEntity": "iRobot", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q30055", "SubjectEntity": "Jaguar Cars", "ObjectEntitiesID": ["Q44294", "Q188514", "Q2046187"], "ObjectEntities": ["Ford Motor Company", "Tata Motors Ltd", "British Leyland"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q320058", "SubjectEntity": "D-Rad", "ObjectEntitiesID": ["Q2506037"], "ObjectEntities": ["VIAG"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q71233", "SubjectEntity": "ZAZ", "ObjectEntitiesID": ["Q4470382"], "ObjectEntities": ["Ukrainian Automobile Corporation"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q300120", "SubjectEntity": "AUO Corporation", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q25775", "SubjectEntity": "Affiliated Managers Group", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q296134", "SubjectEntity": "APG-SGA", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q27074", "SubjectEntity": "Aston Martin Lagonda", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q1351854", "SubjectEntity": "McLaren Automotive", "ObjectEntitiesID": ["Q173146"], "ObjectEntities": ["McLaren Technology Group"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q38676", "SubjectEntity": "Agnico-Eagle Mines", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q291171", "SubjectEntity": "Aegon N.V.", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q1626564", "SubjectEntity": "Honda Canada", "ObjectEntitiesID": ["Q4744011"], "ObjectEntities": ["American Honda Motor Company"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q1335661", "SubjectEntity": "Emgrand", "ObjectEntitiesID": ["Q739000"], "ObjectEntities": ["Geely"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q44294", "SubjectEntity": "Ford Motor Company", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q52601", "SubjectEntity": "SCA", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q569235", "SubjectEntity": "Saturn Corporation", "ObjectEntitiesID": ["Q81965"], "ObjectEntities": ["General Motors"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q6746", "SubjectEntity": "Citro\u00ebn", "ObjectEntitiesID": ["Q97439162"], "ObjectEntities": ["Stellantis"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q1664128", "SubjectEntity": "Innocenti", "ObjectEntitiesID": ["Q2046187"], "ObjectEntities": ["British Leyland"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q3884", "SubjectEntity": "Amazon", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q1636194", "SubjectEntity": "Humber Limited", "ObjectEntitiesID": ["Q1754320"], "ObjectEntities": ["Rootes Group"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q571943", "SubjectEntity": "Ford Germany", "ObjectEntitiesID": ["Q44294"], "ObjectEntities": ["Ford Motor Company"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q4548", "SubjectEntity": "Turkish Airlines", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q45568", "SubjectEntity": "UniCredit", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q7240", "SubjectEntity": "Lockheed Martin", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q329347", "SubjectEntity": "Lukoil", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q1436858", "SubjectEntity": "Ford Italia", "ObjectEntitiesID": ["Q571934"], "ObjectEntities": ["Ford of Europe"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q29366", "SubjectEntity": "Changan Automobile", "ObjectEntitiesID": ["Q1022190"], "ObjectEntities": ["China South Industries Group"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q221869", "SubjectEntity": "KG Mobility", "ObjectEntitiesID": ["Q114243585"], "ObjectEntities": ["KG Group"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q288129", "SubjectEntity": "ACCO Brands", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q6742", "SubjectEntity": "Peugeot", "ObjectEntitiesID": ["Q97439162"], "ObjectEntities": ["Stellantis"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q11407", "SubjectEntity": "VMware Inc.", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q1437020", "SubjectEntity": "Ford do Brasil", "ObjectEntitiesID": ["Q44294"], "ObjectEntities": ["Ford Motor Company"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q40993", "SubjectEntity": "Porsche", "ObjectEntitiesID": ["Q156578"], "ObjectEntities": ["Volkswagen Group"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q1525445", "SubjectEntity": "Hyundai Motor India Limited", "ObjectEntitiesID": ["Q55931"], "ObjectEntities": ["Hyundai Motor Company"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q333718", "SubjectEntity": "Johnson & Johnson", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q239162", "SubjectEntity": "Toyota Motor Manufacturing Czech Republic", "ObjectEntitiesID": ["Q53268"], "ObjectEntities": ["Toyota"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q59183", "SubjectEntity": "Wanderer", "ObjectEntitiesID": ["Q27152"], "ObjectEntities": ["Auto Union"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q35349", "SubjectEntity": "Kia", "ObjectEntitiesID": ["Q59243"], "ObjectEntities": ["Hyundai Motor Group"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q248", "SubjectEntity": "Intel", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q283790", "SubjectEntity": "Flybe", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q333498", "SubjectEntity": "Bombardier", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q326700", "SubjectEntity": "Nippon Sheet Glass", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q25796", "SubjectEntity": "AGL Resources", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q35907", "SubjectEntity": "Land Rover", "ObjectEntitiesID": ["Q2046187"], "ObjectEntities": ["British Leyland"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q30850", "SubjectEntity": "Meitetsu", "ObjectEntitiesID": [""], "ObjectEntities": [""], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q1436920", "SubjectEntity": "Ford South Africa", "ObjectEntitiesID": ["Q44294"], "ObjectEntities": ["Ford Motor Company"], "Relation": "CompanyHasParentOrganisation"}
+{"SubjectEntityID": "Q1501637", "SubjectEntity": "General Motors Thailand", "ObjectEntitiesID": ["Q81965"], "ObjectEntities": ["General Motors"], "Relation": "CompanyHasParentOrganisation"}

@@ -11,7 +11,7 @@ from prompt import REprompt
 from compile_prompt import generate_prompt
 from example_selection import ExampleSelection
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "[your api key here]"
 # os.environ["OPENAI_API_KEY"] = ""
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
@@ -61,6 +61,8 @@ if __name__ == '__main__':
     parser.add_argument('-o', '--output_directory', required=True, help="Directory where to store the extraction")
     parser.add_argument('-t', '--temperature', default=0, help="Temperature used for GPT model")
     parser.add_argument('-l', '--use_langchain', default=False, help="Boolean value to indicate whether to use langchain or not")
+    parser.add_argument('-c', '--continue_previous', default=False, help="Boolean value to indicate whether to replace or append the results")
+    parser.add_argument('-r', '--last_row', default=0, help="value to indicate the latest row processed in previous run")
 
     args = parser.parse_args()
 
@@ -69,7 +71,9 @@ if __name__ == '__main__':
     output_dir = args.output_directory
     temperature = args.temperature
     use_langchain = args.use_langchain
-    print(use_langchain)
+    continue_previous = args.continue_previous
+    last_row_in_previous_run = args.last_row
+    # print(use_langchain)
 
     # set up loggings
     prompt_type = "langchain" if use_langchain else "manual"
@@ -121,19 +125,25 @@ if __name__ == '__main__':
     val_file = args.file_to_prompt
     val_path = os.path.join(data_dir, val_file)
     val_data = read_lm_kbc_jsonl(val_path)
-    print("length of val dataset {}".format(val_data))
+    # print("length of val dataset {}".format(val_data))
 
     logging.warning("Start prompting")
     logging.warning("Validation set size, {}".format(len(val_data)))
     # prompting the validation set
     extraction_output = []
 
+    # clean file before prompting if not continuing from previous one
+    if not continue_previous:
+        open(output_file_path, 'w').close()
+
     # streaming save while prompting
     for i, line in tqdm(enumerate(val_data)):
         input_sbj = line['SubjectEntity']
+        input_sbj_id = line['SubjectEntityID']
         input_relation = line['Relation']
         # print(line)
 
+        wiki_relation_id = line['wikidata_id']
         wiki_relation_label = line['wikidata_label']
         wiki_relation_domain = line['domain']
         wiki_relation_range = line['range']
@@ -144,7 +154,7 @@ if __name__ == '__main__':
         if use_langchain:
             # prompt = prompt_template.format(entity_1=input_sbj, wiki_label=wiki_relation_label)
             prompt = generate_prompt(subj=input_sbj, rel=input_relation)
-            print(prompt)
+            # print(prompt)
         else:
             # Set this param
             examples = ExampleSelection()
@@ -162,25 +172,27 @@ if __name__ == '__main__':
             prefix = """
             Imagine you are emulating Wikidata’s knowledge. 
             Your task is to predict objects based on the given subject and relation. 
-            The number of answers can range from {} to {}. 
             Below are some examples for your reference: """
             example_formatter_template = """
                 Example:
-                - Subject: ‘{}’
+                - Subject: (‘{}’,‘{}’)
                 - Subject Type: ‘{}’
                 - Object Type: ‘{}’
                 - Relation: ‘{}’
+                - Relation Wikidata ID: '{}'
                 - Relation Label (Wikidata): ‘{}’
                 - Relation Explanation (Wikidata): ‘{}’
                 ==> 
                 Predicted Objects: {}
                 """
             suffix = """
-            End of examples. Now, it’s your turn:
-            - Given Subject: ‘{}’
+            End of examples. Now, it’s your turn. Please only give correct answers.
+            The answers shall not contain duplicates and the number of answers shall be between {} to {}. :
+            - Given Subject: (‘{}’,‘{}’)
             - Subject Type: ‘{}’
             - Object Type: ‘{}’
             - Relation: ‘{}’
+            - Relation Wikidata ID: '{}'
             - Relation Label (Wikidata): ‘{}’
             - Relation Explanation (Wikidata): ‘{}’
             ==> 
@@ -192,23 +204,30 @@ if __name__ == '__main__':
             example_separator="\n"
 
             prompt = ""
-            prompt += prefix.format(min_val, max_val)
+            prompt += prefix
             prompt += example_separator
             for example in list_examples:
                 prompt += example_formatter_template.format(example['SubjectEntity'],
+                                                            example['SubjectEntityID'],
                                                             example['domain'],
                                                             example['range'],
                                                             example['Relation'], 
+                                                            example['wikidata_id'], 
                                                             example['wikidata_label'],
                                                             example['explanation'], 
                                                             example['ObjectEntities'])
                 # prompt += example_separator
-            prompt += suffix.format(input_sbj, 
+            prompt += suffix.format(min_val, 
+                                    max_val,
+                                    input_sbj, 
+                                    input_sbj_id, 
                                     wiki_relation_domain,
                                     wiki_relation_range,
                                     input_relation,
+                                    wiki_relation_id,
                                     wiki_relation_label,
                                     wiki_relation_explanation)
+            # print(prompt)
 
             # prefix = """Generate objects holding the relation with the given subject.
             #     Here are some examples: """
@@ -239,16 +258,20 @@ if __name__ == '__main__':
 
         # print(prompt)
 
-        extraction = GPT3response(prompt, temperature=temperature)
-        # save in a dictionary
-        line["Prediction"] = extraction
-        print(extraction)
+        if continue_previous and i <= int(last_row_in_previous_run):
+            print("skipping line-{i}")
+            # do nothing
+        else:
+            extraction = GPT3response(prompt, temperature=temperature)
+            # save in a dictionary
+            line["Prediction"] = extraction
+            print("[{}][{}]".format(input_sbj_id, input_sbj) + extraction)
 
-        # Open the JSONLines file in append mode
-        with open(output_file_path, 'a') as file:
-            # Convert dictionary to JSON string and write to the file
-            file.write(json.dumps(line) + '\n')
+            # Open the JSONLines file in append mode
+            with open(output_file_path, 'a') as file:
+                # Convert dictionary to JSON string and write to the file
+                file.write(json.dumps(line) + '\n')
 
-        extraction_output.append(line)
+            extraction_output.append(line)
     logging.warning("Prompting finished")
     print(len(extraction_output))
