@@ -103,6 +103,13 @@ def align_pedictions_with_validation(predictions: list, original_file: str):
                 wikidata_ids.append(str(wikidata_cache[y]))
             else:   
                 dismabiguated_wikidata_id = disambiguation_baseline(y)
+                if len(dismabiguated_wikidata_id)==0:        
+                    print("test-1: {y}")
+                    if ":" in y:
+                        first_part = y.split(":")[0]
+                        dismabiguated_wikidata_id = disambiguation_baseline(first_part)
+                        print("test-2: {first_part}")
+                        y = first_part
                 update_wikidata_cache(dismabiguated_wikidata_id, y)
                 wikidata_ids.append(str(dismabiguated_wikidata_id))
         wikidata_ids = sorted(wikidata_ids, key=lambda x: wikidata_id_sort(x))
@@ -128,6 +135,8 @@ def save_predictions_for_eval(updated_predictions: list, out_file: str) -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+
+    print("start parsing")
 
     parser.add_argument('-p', '--prediction_file', required=True, help="File that contains the predictions, in a jsonl format")
     parser.add_argument('-g', '--original_input_file', required=True, help="The original input file")

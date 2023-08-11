@@ -1,0 +1,100 @@
+{"SubjectEntityID": "Q2447004", "SubjectEntity": "Toya Delazy", "ObjectEntitiesID": ["Q5994", "Q17172850"], "ObjectEntities": ["piano", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q1444256", "SubjectEntity": "Lodovica Comello", "ObjectEntitiesID": ["Q6607", "Q17172850"], "ObjectEntities": ["guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q2346195", "SubjectEntity": "Joe Robinson", "ObjectEntitiesID": ["Q6607"], "ObjectEntities": ["guitar"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q1740229", "SubjectEntity": "Kevin Pabst", "ObjectEntitiesID": ["Q8338"], "ObjectEntities": ["trumpet"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q17478226", "SubjectEntity": "Jesse Rutherford", "ObjectEntitiesID": ["Q31561", "Q17172850"], "ObjectEntities": ["acoustic guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q7159473", "SubjectEntity": "Pedro Barreto", "ObjectEntitiesID": ["Q8355"], "ObjectEntities": ["violin"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q19845354", "SubjectEntity": "Matoma", "ObjectEntitiesID": ["Q5994", "Q6607", "Q11405", "Q1060750"], "ObjectEntities": ["piano", "guitar", "flute", "digital audio workstation"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q108168846", "SubjectEntity": "Arpi Alto", "ObjectEntitiesID": ["Q5994"], "ObjectEntities": ["piano"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q2591401", "SubjectEntity": "Lee Kiseop", "ObjectEntitiesID": ["Q5994", "Q17172850"], "ObjectEntities": ["piano", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q19483969", "SubjectEntity": "Solar", "ObjectEntitiesID": ["Q5994", "Q6607", "Q128309", "Q17172850"], "ObjectEntities": ["piano", "guitar", "drum kit", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q2121062", "SubjectEntity": "The Weeknd", "ObjectEntitiesID": ["Q5994", "Q6607", "Q46185", "Q52954", "Q128309", "Q17172850"], "ObjectEntities": ["piano", "guitar", "bass guitar", "keyboard instrument", "drum kit", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q96106282", "SubjectEntity": "Michele Morrone", "ObjectEntitiesID": ["Q6607"], "ObjectEntities": ["guitar"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q4027095", "SubjectEntity": "Tom Odell", "ObjectEntitiesID": ["Q5994", "Q17172850"], "ObjectEntities": ["piano", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q21067419", "SubjectEntity": "Shun Ng", "ObjectEntitiesID": ["Q6607"], "ObjectEntities": ["guitar"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q23761694", "SubjectEntity": "Mitski", "ObjectEntitiesID": ["Q5994", "Q6607", "Q8355", "Q46185", "Q128309", "Q17172850"], "ObjectEntities": ["piano", "guitar", "violin", "bass guitar", "drum kit", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q23044778", "SubjectEntity": "Mette Henriette", "ObjectEntitiesID": ["Q9798"], "ObjectEntities": ["saxophone"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q105093267", "SubjectEntity": "Zyny", "ObjectEntitiesID": ["Q6607"], "ObjectEntities": ["guitar"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q492716", "SubjectEntity": "Kim Ji-soo", "ObjectEntitiesID": ["Q6607", "Q17172850"], "ObjectEntities": ["guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q28533369", "SubjectEntity": "Lucie Jones", "ObjectEntitiesID": ["Q5994", "Q17172850"], "ObjectEntities": ["piano", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q50413746", "SubjectEntity": "Sebastian Zawadzki", "ObjectEntitiesID": ["Q5994"], "ObjectEntities": ["piano"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q101198091", "SubjectEntity": "Mads Kj\u00f8ller Henningsen", "ObjectEntitiesID": ["Q8347", "Q11405", "Q207821", "Q185003", "Q244976", "Q322675", "Q677921"], "ObjectEntities": ["bagpipes", "flute", "hurdy-gurdy", "mouth harp", "bodhr\u00e1n", "bouzouki", "shawm"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q289423", "SubjectEntity": "Cheyenne Kimball", "ObjectEntitiesID": ["Q6607", "Q302497", "Q17172850"], "ObjectEntities": ["guitar", "mandolin", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q6394174", "SubjectEntity": "Erlend Apneseth", "ObjectEntitiesID": ["Q8355", "Q178933", "Q510487"], "ObjectEntities": ["violin", "Hardanger fiddle", "fiddle"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q38212996", "SubjectEntity": "Hamed Baradaran", "ObjectEntitiesID": ["Q5994"], "ObjectEntities": ["piano"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q25190001", "SubjectEntity": "Oliver Poole", "ObjectEntitiesID": ["Q5994"], "ObjectEntities": ["piano"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q39049903", "SubjectEntity": "NoMBe", "ObjectEntitiesID": ["Q5994", "Q6607", "Q163829"], "ObjectEntities": ["piano", "guitar", "synthesizer"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q125885", "SubjectEntity": "Anna Fedorova", "ObjectEntitiesID": ["Q5994"], "ObjectEntities": ["piano"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q3304595", "SubjectEntity": "Colton Dixon", "ObjectEntitiesID": ["Q5994", "Q17172850"], "ObjectEntities": ["piano", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q9032251", "SubjectEntity": "Michael Calfan", "ObjectEntitiesID": ["Q6607", "Q163829", "Q3382191"], "ObjectEntities": ["guitar", "synthesizer", "upright piano"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q6341405", "SubjectEntity": "Matt Corby", "ObjectEntitiesID": ["Q5994", "Q6607", "Q17172850"], "ObjectEntities": ["piano", "guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q10788758", "SubjectEntity": "Lu Han", "ObjectEntitiesID": ["Q6607", "Q17172850"], "ObjectEntities": ["guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q3339429", "SubjectEntity": "Shila Amzah", "ObjectEntitiesID": ["Q5994", "Q6607", "Q17172850"], "ObjectEntities": ["piano", "guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q106464771", "SubjectEntity": "Nomke", "ObjectEntitiesID": ["Q6607", "Q61285", "Q810447", "Q1343007"], "ObjectEntities": ["guitar", "ukulele", "bass", "electronic keyboard"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q17338014", "SubjectEntity": "Judit Neddermann", "ObjectEntitiesID": ["Q6607"], "ObjectEntities": ["guitar"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q21573827", "SubjectEntity": "Julia Sanina", "ObjectEntitiesID": ["Q5994", "Q17172850"], "ObjectEntities": ["piano", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q42071448", "SubjectEntity": "Kane Adams", "ObjectEntitiesID": ["Q6607"], "ObjectEntities": ["guitar"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q107436170", "SubjectEntity": "Tim Bernardes", "ObjectEntitiesID": ["Q5994", "Q6607", "Q17172850"], "ObjectEntities": ["piano", "guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q21622122", "SubjectEntity": "Maren Morris", "ObjectEntitiesID": ["Q6607", "Q17172850"], "ObjectEntities": ["guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q20744823", "SubjectEntity": "Lucas Debargue", "ObjectEntitiesID": ["Q5994"], "ObjectEntities": ["piano"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q28007321", "SubjectEntity": "Alok", "ObjectEntitiesID": ["Q6607", "Q1060750"], "ObjectEntities": ["guitar", "digital audio workstation"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q19373546", "SubjectEntity": "Hanne Leland", "ObjectEntitiesID": ["Q5994", "Q6607", "Q17172850"], "ObjectEntities": ["piano", "guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q16302072", "SubjectEntity": "Leroy Sanchez", "ObjectEntitiesID": ["Q6607", "Q17172850"], "ObjectEntities": ["guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q26702487", "SubjectEntity": "Spencer Ludwig", "ObjectEntitiesID": ["Q8338"], "ObjectEntities": ["trumpet"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q15637993", "SubjectEntity": "Jett Rebel", "ObjectEntitiesID": ["Q6607", "Q17172850"], "ObjectEntities": ["guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q16855301", "SubjectEntity": "Noa Moon", "ObjectEntitiesID": ["Q6607"], "ObjectEntities": ["guitar"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q47447", "SubjectEntity": "Ed Sheeran", "ObjectEntitiesID": ["Q6607", "Q17172850", "Q106272842"], "ObjectEntities": ["guitar", "voice", "live looper"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q41823590", "SubjectEntity": "Luca Stricagnoli", "ObjectEntitiesID": ["Q31561", "Q3675208"], "ObjectEntities": ["acoustic guitar", "soprano guitar"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q4166246", "SubjectEntity": "Dan Croll", "ObjectEntitiesID": ["Q6607"], "ObjectEntities": ["guitar"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q93837", "SubjectEntity": "Lukas Geniu\u0161as", "ObjectEntitiesID": ["Q5994"], "ObjectEntities": ["piano"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q20873476", "SubjectEntity": "Patrik Svendsen", "ObjectEntitiesID": ["Q6607"], "ObjectEntities": ["guitar"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q116939804", "SubjectEntity": "Martin Hamiche", "ObjectEntitiesID": ["Q6607"], "ObjectEntities": ["guitar"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q442721", "SubjectEntity": "Kendall Schmidt", "ObjectEntitiesID": ["Q6607", "Q17172850"], "ObjectEntities": ["guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q214831", "SubjectEntity": "David Archuleta", "ObjectEntitiesID": ["Q5994", "Q3382191", "Q17172850"], "ObjectEntities": ["piano", "upright piano", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q6790244", "SubjectEntity": "Matthew Burnett", "ObjectEntitiesID": ["Q5994"], "ObjectEntities": ["piano"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q61831136", "SubjectEntity": "Sylvaine", "ObjectEntitiesID": ["Q6607", "Q46185", "Q52954", "Q17172850"], "ObjectEntities": ["guitar", "bass guitar", "keyboard instrument", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q274157", "SubjectEntity": "Mitchel Musso", "ObjectEntitiesID": ["Q5994", "Q17172850"], "ObjectEntities": ["piano", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q30122853", "SubjectEntity": "Tom Walker", "ObjectEntitiesID": ["Q6607", "Q17172850"], "ObjectEntities": ["guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q8133093", "SubjectEntity": "Adel\u0117 Daunoravi\u010di\u016bt\u0117", "ObjectEntitiesID": ["Q5994"], "ObjectEntities": ["piano"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q12271381", "SubjectEntity": "Alex Mica", "ObjectEntitiesID": ["Q5994", "Q17172850"], "ObjectEntities": ["piano", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q5448553", "SubjectEntity": "Fiuk", "ObjectEntitiesID": ["Q6607", "Q17172850"], "ObjectEntities": ["guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q29188051", "SubjectEntity": "Chuck Warp", "ObjectEntitiesID": ["Q5994", "Q163829"], "ObjectEntities": ["piano", "synthesizer"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q23655966", "SubjectEntity": "Aleksandr Yefimov", "ObjectEntitiesID": ["Q5994"], "ObjectEntities": ["piano"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q496329", "SubjectEntity": "Hyolyn", "ObjectEntitiesID": ["Q5994", "Q17172850"], "ObjectEntities": ["piano", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q5105705", "SubjectEntity": "Chris Akinyemi", "ObjectEntitiesID": ["Q6607", "Q17172850"], "ObjectEntities": ["guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q19571930", "SubjectEntity": "Raphaelle Standell-Preston", "ObjectEntitiesID": ["Q6607", "Q17172850"], "ObjectEntities": ["guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q17305969", "SubjectEntity": "Calum Graham", "ObjectEntitiesID": ["Q6607"], "ObjectEntities": ["guitar"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q15983684", "SubjectEntity": "Matthew Mole", "ObjectEntitiesID": ["Q6607", "Q17172850"], "ObjectEntities": ["guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q391471", "SubjectEntity": "Yury Revich", "ObjectEntitiesID": ["Q8355"], "ObjectEntities": ["violin"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q484834", "SubjectEntity": "Lee Hong-gi", "ObjectEntitiesID": ["Q6607", "Q17172850"], "ObjectEntities": ["guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q26694026", "SubjectEntity": "Lena Romul", "ObjectEntitiesID": ["Q9798", "Q17172850"], "ObjectEntities": ["saxophone", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q3079072", "SubjectEntity": "Piotr Orzechowski", "ObjectEntitiesID": ["Q5994"], "ObjectEntities": ["piano"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q1342932", "SubjectEntity": "Diego Boneta", "ObjectEntitiesID": ["Q6607", "Q17172850"], "ObjectEntities": ["guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q2635946", "SubjectEntity": "Daniil Trifonov", "ObjectEntitiesID": ["Q5994"], "ObjectEntities": ["piano"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q6495231", "SubjectEntity": "Moran Mazor", "ObjectEntitiesID": ["Q5994", "Q17172850"], "ObjectEntities": ["piano", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q106225111", "SubjectEntity": "Jim Bauer", "ObjectEntitiesID": ["Q6607", "Q1553339"], "ObjectEntities": ["guitar", "chant"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q12433089", "SubjectEntity": "John Newman", "ObjectEntitiesID": ["Q6607", "Q1343007", "Q17172850"], "ObjectEntities": ["guitar", "electronic keyboard", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q5318744", "SubjectEntity": "Dylan Mattingly", "ObjectEntitiesID": ["Q8371"], "ObjectEntities": ["cello"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q17811637", "SubjectEntity": "James Bay", "ObjectEntitiesID": ["Q6607", "Q17172850"], "ObjectEntities": ["guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q29829086", "SubjectEntity": "Ralph Kaminski", "ObjectEntitiesID": ["Q5994", "Q17172850"], "ObjectEntities": ["piano", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q11733334", "SubjectEntity": "Kaja Mianowana", "ObjectEntitiesID": ["Q6607"], "ObjectEntities": ["guitar"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q7279198", "SubjectEntity": "Rachel Cheung", "ObjectEntitiesID": ["Q5994"], "ObjectEntities": ["piano"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q27062678", "SubjectEntity": "Tariq Hisny", "ObjectEntitiesID": ["Q5994", "Q1343007", "Q17172850"], "ObjectEntities": ["piano", "electronic keyboard", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q50825897", "SubjectEntity": "Philippe Prud'homme", "ObjectEntitiesID": ["Q5994"], "ObjectEntities": ["piano"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q608717", "SubjectEntity": "Natalia Krakowiak", "ObjectEntitiesID": ["Q5994"], "ObjectEntities": ["piano"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q5321288", "SubjectEntity": "D\u017eenana \u0160ehanovi\u0107", "ObjectEntitiesID": ["Q5994"], "ObjectEntities": ["piano"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q5651513", "SubjectEntity": "Haochen Zhang", "ObjectEntitiesID": ["Q5994"], "ObjectEntities": ["piano"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q65169465", "SubjectEntity": "Hania Rani", "ObjectEntitiesID": ["Q5994"], "ObjectEntities": ["piano"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q2185520", "SubjectEntity": "Liza Sips", "ObjectEntitiesID": ["Q11405"], "ObjectEntities": ["flute"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q66102", "SubjectEntity": "Mandy Capristo", "ObjectEntitiesID": ["Q5994", "Q17172850"], "ObjectEntities": ["piano", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q1329748", "SubjectEntity": "Tomomi Kasai", "ObjectEntitiesID": ["Q6607", "Q17172850"], "ObjectEntities": ["guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q467004", "SubjectEntity": "Joan Franka", "ObjectEntitiesID": ["Q6607", "Q17172850"], "ObjectEntities": ["guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q312531", "SubjectEntity": "Thomas Brodie-Sangster", "ObjectEntitiesID": ["Q6607", "Q11404", "Q46185"], "ObjectEntities": ["guitar", "drum", "bass guitar"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q337533", "SubjectEntity": "Axel Ehnstr\u00f6m", "ObjectEntitiesID": ["Q6607", "Q17172850"], "ObjectEntities": ["guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q7859961", "SubjectEntity": "Tyler Bryant", "ObjectEntitiesID": ["Q6607"], "ObjectEntities": ["guitar"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q3935797", "SubjectEntity": "Riker Lynch", "ObjectEntitiesID": ["Q6607", "Q46185"], "ObjectEntities": ["guitar", "bass guitar"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q21079382", "SubjectEntity": "Kristina Si", "ObjectEntitiesID": ["Q5994", "Q17172850"], "ObjectEntities": ["piano", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q239195", "SubjectEntity": "Hayley Kiyoko", "ObjectEntitiesID": ["Q6607", "Q17172850"], "ObjectEntities": ["guitar", "voice"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q21618845", "SubjectEntity": "Jack Garratt", "ObjectEntitiesID": ["Q5994", "Q6607", "Q8350", "Q46185", "Q128309", "Q901207", "Q17172850", "Q18456301"], "ObjectEntities": ["piano", "guitar", "trombone", "bass guitar", "drum kit", "musical keyboard", "voice", "Practice pad"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q61711466", "SubjectEntity": "Kobi Marimi", "ObjectEntitiesID": ["Q6607"], "ObjectEntities": ["guitar"], "Relation": "PersonPlaysInstrument"}
+{"SubjectEntityID": "Q52008112", "SubjectEntity": "Marnix Dorrestein", "ObjectEntitiesID": ["Q6607", "Q128309", "Q163829", "Q17172850"], "ObjectEntities": ["guitar", "drum kit", "synthesizer", "voice"], "Relation": "PersonPlaysInstrument"}
