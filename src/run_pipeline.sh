@@ -25,10 +25,9 @@ gold_file="../data/val-output.jsonl"
 # python input-wiki-transformer.py -i "../data/val_parent_org.jsonl" -o "../data/val_parent_org-output.jsonl" &
 python input-wiki-transformer.py -i "../data/val.jsonl" -o "../data/val-output.jsonl" &
 
-
 # Run the first Python script with arguments in the background
-# python run.py -d "$data_dir" -f "$file_to_prompt" -o "$output_dir" -c true -r 25 &
-python run.py -d "$data_dir" -f "$file_to_prompt" -o "$output_dir" &
+python run.py -d "$data_dir" -f "$file_to_prompt" -o "$output_dir"  -m "gpt-4" &
+
 # Capture the process ID of the first Python script
 run_py_pid=$!
 echo "process-id: ${run_py_pid}" 

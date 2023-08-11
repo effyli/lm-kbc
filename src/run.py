@@ -11,8 +11,8 @@ from prompt import REprompt
 from compile_prompt import generate_prompt
 from example_selection import ExampleSelection
 
+
 os.environ["OPENAI_API_KEY"] = "[your api key here]"
-# os.environ["OPENAI_API_KEY"] = ""
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
 
@@ -61,6 +61,7 @@ if __name__ == '__main__':
     parser.add_argument('-o', '--output_directory', required=True, help="Directory where to store the extraction")
     parser.add_argument('-t', '--temperature', default=0, help="Temperature used for GPT model")
     parser.add_argument('-l', '--use_langchain', default=False, help="Boolean value to indicate whether to use langchain or not")
+    parser.add_argument('-m', '--model', default='gpt-3.5-turbo', help="The target OpenAI model to use")
     parser.add_argument('-c', '--continue_previous', default=False, help="Boolean value to indicate whether to replace or append the results")
     parser.add_argument('-r', '--last_row', default=0, help="value to indicate the latest row processed in previous run")
 
@@ -71,9 +72,11 @@ if __name__ == '__main__':
     output_dir = args.output_directory
     temperature = args.temperature
     use_langchain = args.use_langchain
+    model = args.model
+    print('Target model', model)
+    print(use_langchain)
     continue_previous = args.continue_previous
     last_row_in_previous_run = args.last_row
-    # print(use_langchain)
 
     # set up loggings
     prompt_type = "langchain" if use_langchain else "manual"
@@ -125,7 +128,7 @@ if __name__ == '__main__':
     val_file = args.file_to_prompt
     val_path = os.path.join(data_dir, val_file)
     val_data = read_lm_kbc_jsonl(val_path)
-    # print("length of val dataset {}".format(val_data))
+    print("length of val dataset {}".format(len(val_data)))
 
     logging.warning("Start prompting")
     logging.warning("Validation set size, {}".format(len(val_data)))
@@ -183,7 +186,7 @@ if __name__ == '__main__':
                 - Relation Label (Wikidata): ‘{}’
                 - Relation Explanation (Wikidata): ‘{}’
                 ==> 
-                Predicted Objects: {}
+                Target entities: {} 
                 """
             suffix = """
             End of examples. Now, it’s your turn. Please only give correct answers.
@@ -262,7 +265,7 @@ if __name__ == '__main__':
             print("skipping line-{i}")
             # do nothing
         else:
-            extraction = GPT3response(prompt, temperature=temperature)
+            extraction = GPT3response(prompt, temperature=temperature, model=model)
             # save in a dictionary
             line["Prediction"] = extraction
             print("[{}][{}]".format(input_sbj_id, input_sbj) + extraction)
