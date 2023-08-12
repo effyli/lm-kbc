@@ -12,7 +12,7 @@ from compile_prompt import generate_prompt
 from example_selection import ExampleSelection
 
 
-os.environ["OPENAI_API_KEY"] = "[your api key here]"
+os.environ["OPENAI_API_KEY"] = "sk-"
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
 

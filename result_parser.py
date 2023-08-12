@@ -103,7 +103,7 @@ def align_pedictions_with_validation(predictions: list, original_file: str):
                 wikidata_ids.append(str(wikidata_cache[y]))
             else:   
                 dismabiguated_wikidata_id = disambiguation_baseline(y)
-                if len(dismabiguated_wikidata_id)==0:        
+                if len(dismabiguated_wikidata_id) == 0:        
                     print("test-1: {y}")
                     if ":" in y:
                         first_part = y.split(":")[0]
