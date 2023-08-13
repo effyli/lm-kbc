@@ -1,0 +1,37 @@
+- Could you please give me the most relevant property from wikidata for each of the property below?
+
+	BandHasMember
+	CityLocatedAtRiver
+	CompanyHasParentOrganisation
+	CompoundHasParts
+	CountryBordersCountry
+	CountryHasOfficialLanguage
+	CountryHasStates
+	FootballerPlaysPosition
+	PersonCauseOfDeath
+	PersonHasAutobiography
+	PersonHasEmployer
+	PersonHasNoblePrize
+	PersonHasNumberOfChildren
+	PersonHasPlaceOfDeath
+	PersonHasProfession
+	PersonHasSpouse
+	PersonPlaysInstrument
+	PersonSpeaksLanguage
+	RiverBasinsCountry
+	SeriesHasNumberOfEpisodes
+	StateBordersState
+
+- Please format the result in the following JSON format: 
+{
+  "input": {
+    "output": {
+        "value": [first_value],
+        "wikidata_id": [first_wikidata_id], 
+        "wikidata_label": [first_wikidata_label],
+        "domain": [domain],
+        "range": [range],
+        "explanation": [explanation]
+      }
+  }
+}
