@@ -54,7 +54,7 @@ python ../evaluate.py -p "YOUR_PREDICTION_FILE" -g "$GOLD_FILE"
 
 Code review
 - [x] Update README with instructions. [Effy]
-- [ ] Put the final prediction file in the root directory. [Effy]
+- [x] Put the final prediction file in the root directory. [Effy]
 
 Paper review
 - [ ] “Semantic Similarity Selector: It is unclear how this exactly was done and which model was used for the semantic similarity computation.”
