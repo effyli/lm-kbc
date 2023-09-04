@@ -67,7 +67,7 @@ Paper review
 - [x] "Abstract: Suggested citation format for the challenge (instead of footnote): @article{lmkbc2023, title={LM-KBC: Knowledge base construction from pre-trained language models, Semantic Web Challenge @ ISWC}, author={Singhania, Sneha and Kalo, Jan-Christoph and Razniewski, Simon and Pan, Jeff Z.}, journal={CEUR-WS}, url={https://lm-kbc.github.io/challenge2023/}, year={2023} }"
 - [x] "Abstract: "background KB" confused me initially, e.g., whether a new background KB is constructed. Perhaps more specific would be "constraints and descriptions of the relations"?"
 - [x] "Last paragraph of Section 1: Odd tense change within first 2 sentences."
-- [ ] "Related work: "As one of their ablations, they also ..." (and following sentence) - not well comprehensible, maybe expand?"
+- [x] "Related work: "As one of their ablations, they also ..." (and following sentence) - not well comprehensible, maybe expand?"
 - [x] "3.1 "wikidata identifies" -> "Wikidata identifiers"" [Effy]
 - [ ] "Figure 1 is nice. What would be even greater though, would be a walk-through with concrete examples."
 - [ ] "4.1 third paragraph: An illustration of an example prompt, with highlight for the different conceptual parts, would much improve readibility."
@@ -82,7 +82,7 @@ Paper review
 - [ ] "2nd paragraph: As this is put forward, why do more relevant examples actually help, compared with random examples (do they?)?"
 - [ ] "3rd paragraph: How big an issue is that?"
 - [ ] "Last paragraph: How big an issue is that in this challenge?"
-- [ ] "Section 7: "...when asked about specific relations" - could not understand this point."
+- [x] "Section 7: "...when asked about specific relations" - could not understand this point."
 
 
 
