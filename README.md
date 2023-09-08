@@ -57,9 +57,9 @@ Code review
 - [x] Put the final prediction file in the root directory. [Effy]
 
 Paper review
-- [ ] “Semantic Similarity Selector: It is unclear how this exactly was done and which model was used for the semantic similarity computation.”
-- [ ] “It would be helpful to refer to Fig. 1, while describing the methodology.”
-- [ ] “You mention hyperparameter tuning in the Figure, but never mention that again in text. Is this not done in the end?”
+- [X] “Semantic Similarity Selector: It is unclear how this exactly was done and which model was used for the semantic similarity computation.”
+- [x] “It would be helpful to refer to Fig. 1, while describing the methodology.”
+- [x] “You mention hyperparameter tuning in the Figure, but never mention that again in text. Is this not done in the end?”
 - [ ] “An ablation study for the Wikidata context would be interesting. Does this actually improve the results?”
 - [x] “Why are the numbers for the 0-shot results identical to the other results for GPT-4? Maybe wrong results in the table?” [Anthony]
 - [ ] “”““In our experiments, we observe that both demonstrated examples and additional knowledge of the entities play a crucial role in enhancing a model’s understanding and generation.” -I actually do not see this in the experiments. Would be helpful to connect this conclusion to the actual results.”“”
@@ -69,13 +69,13 @@ Paper review
 - [x] "Last paragraph of Section 1: Odd tense change within first 2 sentences."
 - [x] "Related work: "As one of their ablations, they also ..." (and following sentence) - not well comprehensible, maybe expand?"
 - [x] "3.1 "wikidata identifies" -> "Wikidata identifiers"" [Effy]
-- [ ] "Figure 1 is nice. What would be even greater though, would be a walk-through with concrete examples."
+- [x] "Figure 1 is nice. What would be even greater though, would be a walk-through with concrete examples."
 - [ ] "4.1 third paragraph: An illustration of an example prompt, with highlight for the different conceptual parts, would much improve readibility."
 - [ ] "4.2.2 last two sentences: I don't understand well - what does the number of relation matter for variation? Isn't variation inside on relation enough (e.g., very different object set sizes, and values)?"
 - [ ] "4.3: I found the title slightly confusing (expecting something more general than happened). It seems what really happens is that more information on the properties is provided (and not on the subject, as the AT&T example made me at first believe)."
 - [x] ""it's" - style (2x in paper)" [Effy]
 - [ ] ""the prompt is available in Github" - I'd suggest to add it to the paper to make it more self-contained"
-- [ ] ""by finding related information to the given subject" - should it be "...given relation"?"
+- [x] ""by finding related information to the given subject" - should it be "...given relation"?"
 - [ ] "What is the significance of 4.4? How much performance does it add?"
 - [ ] "Section 6: "The findings for our study shed light on how ..." - without numbers reporting the significance of post-processing, so far no light is shed on that part. Table 1 would also benefit from a baseline (e.g., the examples from the provided baselines?)"
 - [ ] "2nd paragraph: It seems the authors wanted to provide context also for entities, not just relations, but time prevented them from doing so? Would be helpful to say whether anything was tested in that direction."
